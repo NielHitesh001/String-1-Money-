@@ -6,7 +6,7 @@ currency_symbol: "\u20ad"
 country_count: 1
 tags:
   - finance/currency
-last_updated: "2026-09-01 06:28 UTC"
+last_updated: "2026-09-02 02:37 UTC"
 ---
 # Lao kip (LAK) Currency Hub
 
@@ -16,7 +16,7 @@ last_updated: "2026-09-01 06:28 UTC"
 |---|---|
 | USD -> LAK | `N/A` |
 | Source | ECB reference rate (via frankfurter.app) |
-| As of | 2026-08-31 |
+| As of | 2026-09-01 |
 <!-- LIVE:FXRATE:END -->
 
 ## Countries Using LAK

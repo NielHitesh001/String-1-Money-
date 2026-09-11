@@ -6,7 +6,7 @@ currency_symbol: "$"
 country_count: 4
 tags:
   - finance/currency
-last_updated: "2026-09-01 06:28 UTC"
+last_updated: "2026-09-02 02:37 UTC"
 ---
 # Australian dollar (AUD) Currency Hub
 
@@ -14,9 +14,9 @@ last_updated: "2026-09-01 06:28 UTC"
 <!-- LIVE:FXRATE:START -->
 | Metric | Value |
 |---|---|
-| USD -> AUD | `1.3963` |
+| USD -> AUD | `1.4003` |
 | Source | ECB reference rate (via frankfurter.app) |
-| As of | 2026-08-31 |
+| As of | 2026-09-01 |
 <!-- LIVE:FXRATE:END -->
 
 ## Countries Using AUD

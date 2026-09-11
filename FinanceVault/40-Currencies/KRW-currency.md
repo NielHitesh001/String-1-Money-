@@ -6,7 +6,7 @@ currency_symbol: "\u20a9"
 country_count: 1
 tags:
   - finance/currency
-last_updated: "2026-09-01 06:28 UTC"
+last_updated: "2026-09-02 02:37 UTC"
 ---
 # South Korean won (KRW) Currency Hub
 
@@ -14,9 +14,9 @@ last_updated: "2026-09-01 06:28 UTC"
 <!-- LIVE:FXRATE:START -->
 | Metric | Value |
 |---|---|
-| USD -> KRW | `1368.0300` |
+| USD -> KRW | `1374.6100` |
 | Source | ECB reference rate (via frankfurter.app) |
-| As of | 2026-08-31 |
+| As of | 2026-09-01 |
 <!-- LIVE:FXRATE:END -->
 
 ## Countries Using KRW

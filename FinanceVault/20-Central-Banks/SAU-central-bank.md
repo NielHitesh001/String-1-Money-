@@ -8,7 +8,7 @@ policy_rate_as_of: "N/A"
 tags:
   - finance/central-bank
 data_quality: "curated"
-last_updated: "2026-09-01 06:21 UTC"
+last_updated: "2026-09-01 20:56 UTC"
 ---
 # 🏛️ Saudi Central Bank
 

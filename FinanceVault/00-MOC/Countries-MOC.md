@@ -2,7 +2,7 @@
 type: "moc"
 tags:
   - finance/moc
-last_updated: "2026-09-01 06:21 UTC"
+last_updated: "2026-09-01 20:09 UTC"
 ---
 # 🗺️ Countries — Map of Content
 

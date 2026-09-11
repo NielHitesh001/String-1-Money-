@@ -10,7 +10,7 @@ population: "N/A"
 tags:
   - finance/country
   - region/oceania
-last_updated: "2026-09-01 06:28 UTC"
+last_updated: "2026-09-02 02:37 UTC"
 ---
 # 🏦 New Zealand — Financial Tear Sheet
 
@@ -24,9 +24,9 @@ last_updated: "2026-09-01 06:28 UTC"
 <!-- LIVE:FXRATE:START -->
 | Metric | Value |
 |---|---|
-| USD → NZD | `1.6902` |
+| USD → NZD | `1.6975` |
 | Source | ECB reference rate (via frankfurter.app) |
-| As of | 2026-08-31 |
+| As of | 2026-09-01 |
 <!-- LIVE:FXRATE:END -->
 
 ## 🏛️ Monetary Authority

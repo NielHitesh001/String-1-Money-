@@ -1,5 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
-const path = require('path');
+const { app, BrowserWindow } = require('electron');
 
 let mainWindow;
 
@@ -9,45 +8,30 @@ function createWindow() {
     height: 1080,
     minWidth: 1280,
     minHeight: 720,
-    backgroundColor: '#050505',
-    title: 'World Money — Financial Intelligence',
     webPreferences: {
       nodeIntegration: false,
-      contextIsolation: true,
-      sandbox: true,
-      preload: path.join(__dirname, 'preload.cjs')
+      contextIsolation: true
     }
   });
 
-  const isDev = process.env.NODE_ENV === 'development' || !app.isPackaged;
-  const devUrl = process.env.ELECTRON_START_URL || 'http://localhost:5173';
+  const devUrl = 'http://127.0.0.1:5173';
 
-  if (isDev && !process.env.ELECTRON_PROD_TEST) {
+  const loadApp = () => {
     mainWindow.loadURL(devUrl).catch(() => {
-      // Fallback to local built dist if Vite dev server not running
-      mainWindow.loadFile(path.join(__dirname, 'dist/index.html'));
+      setTimeout(loadApp, 1000);
     });
-  } else {
-    mainWindow.loadFile(path.join(__dirname, 'dist/index.html'));
-  }
+  };
 
-  mainWindow.on('closed', () => {
-    mainWindow = null;
-  });
+  loadApp();
+  mainWindow.webContents.openDevTools();
 }
 
-app.whenReady().then(() => {
-  createWindow();
-
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow();
-    }
-  });
-});
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+  if (process.platform !== 'darwin') app.quit();
+});
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });

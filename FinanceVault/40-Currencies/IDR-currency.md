@@ -6,7 +6,7 @@ currency_symbol: "Rp"
 country_count: 1
 tags:
   - finance/currency
-last_updated: "2026-09-01 06:28 UTC"
+last_updated: "2026-09-02 02:37 UTC"
 ---
 # Indonesian rupiah (IDR) Currency Hub
 
@@ -14,9 +14,9 @@ last_updated: "2026-09-01 06:28 UTC"
 <!-- LIVE:FXRATE:START -->
 | Metric | Value |
 |---|---|
-| USD -> IDR | `17710.0000` |
+| USD -> IDR | `17745.0000` |
 | Source | ECB reference rate (via frankfurter.app) |
-| As of | 2026-08-31 |
+| As of | 2026-09-01 |
 <!-- LIVE:FXRATE:END -->
 
 ## Countries Using IDR

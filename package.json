@@ -5,7 +5,7 @@
   "type": "module",
   "main": "electron-main.cjs",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview",
     "server": "node src/server/server.mjs",

@@ -8,28 +8,28 @@
     "DEU": {
       "policy_rate": 2.25,
       "policy_rate_source": "FRED ECBDFR",
-      "policy_rate_as_of": "2026-08-31"
+      "policy_rate_as_of": "2026-09-01"
     },
     "FRA": {
       "policy_rate": 2.25,
       "policy_rate_source": "FRED ECBDFR",
-      "policy_rate_as_of": "2026-08-31"
+      "policy_rate_as_of": "2026-09-01"
     },
     "ITA": {
       "policy_rate": 2.25,
       "policy_rate_source": "FRED ECBDFR",
-      "policy_rate_as_of": "2026-08-31"
+      "policy_rate_as_of": "2026-09-01"
     },
     "ESP": {
       "policy_rate": 2.25,
       "policy_rate_source": "FRED ECBDFR",
-      "policy_rate_as_of": "2026-08-31"
+      "policy_rate_as_of": "2026-09-01"
     },
     "NLD": {
       "policy_rate": 2.25,
       "policy_rate_source": "FRED ECBDFR",
-      "policy_rate_as_of": "2026-08-31"
+      "policy_rate_as_of": "2026-09-01"
     }
   },
-  "fetched_at": "2026-09-01 02:55 UTC"
+  "fetched_at": "2026-09-01 14:56 UTC"
 }
