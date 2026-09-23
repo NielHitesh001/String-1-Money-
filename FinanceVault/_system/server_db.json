@@ -41,6 +41,121 @@
   ],
   "audit": [
     {
+      "sequence": 207,
+      "event": "alert triaged: TX-2026-08494",
+      "timestamp": "2026-09-11T06:09:27.386Z"
+    },
+    {
+      "sequence": 206,
+      "event": "role view switched to Investigator",
+      "timestamp": "2026-09-11T06:09:23.870Z"
+    },
+    {
+      "sequence": 205,
+      "event": "role view switched to Analyst",
+      "timestamp": "2026-09-11T06:09:21.387Z"
+    },
+    {
+      "sequence": 204,
+      "event": "role view switched to Investigator",
+      "timestamp": "2026-09-11T06:09:18.906Z"
+    },
+    {
+      "sequence": 203,
+      "event": "role view switched to Admin",
+      "timestamp": "2026-09-11T06:09:15.963Z"
+    },
+    {
+      "sequence": 202,
+      "event": "role view switched to Analyst",
+      "timestamp": "2026-09-11T06:09:13.809Z"
+    },
+    {
+      "sequence": 201,
+      "event": "saved investigation view",
+      "timestamp": "2026-09-11T06:09:10.342Z"
+    },
+    {
+      "sequence": 200,
+      "event": "exported filtered JSON report",
+      "timestamp": "2026-09-11T05:46:48.478Z"
+    },
+    {
+      "sequence": 199,
+      "event": "saved investigation view",
+      "timestamp": "2026-09-11T05:46:47.865Z"
+    },
+    {
+      "sequence": 198,
+      "event": "trace cleared",
+      "timestamp": "2026-09-11T05:46:47.533Z"
+    },
+    {
+      "sequence": 197,
+      "event": "role view switched to Admin",
+      "timestamp": "2026-09-11T05:46:45.376Z"
+    },
+    {
+      "sequence": 196,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-11T05:46:43.147Z"
+    },
+    {
+      "sequence": 195,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-11T05:46:42.764Z"
+    },
+    {
+      "sequence": 194,
+      "event": "opened CASE-1829",
+      "timestamp": "2026-09-11T05:46:42.156Z"
+    },
+    {
+      "sequence": 193,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-11T05:46:41.682Z"
+    },
+    {
+      "sequence": 192,
+      "event": "inspected entity JIO-IN",
+      "timestamp": "2026-09-11T05:45:47.083Z"
+    },
+    {
+      "sequence": 191,
+      "event": "inspected entity BLACKROCK-US",
+      "timestamp": "2026-09-11T05:45:39.697Z"
+    },
+    {
+      "sequence": 190,
+      "event": "inspected transaction TX-2026-08501",
+      "timestamp": "2026-09-11T05:45:39.248Z"
+    },
+    {
+      "sequence": 189,
+      "event": "inspected entity JIO-IN",
+      "timestamp": "2026-09-11T05:45:33.948Z"
+    },
+    {
+      "sequence": 188,
+      "event": "inspected entity BLACKROCK-US",
+      "timestamp": "2026-09-11T05:45:32.949Z"
+    },
+    {
+      "sequence": 187,
+      "event": "inspected transaction TX-2026-08501",
+      "timestamp": "2026-09-11T05:44:56.316Z"
+    },
+    {
+      "sequence": 186,
+      "event": "multi-entity trace path evaluated: BLACKROCK-US -> JIO-IN",
+      "timestamp": "2026-09-11T05:44:43.848Z"
+    },
+    {
+      "sequence": 185,
+      "event": "inspected entity BLACKROCK-US",
+      "timestamp": "2026-09-11T05:44:38.956Z"
+    },
+    {
       "sequence": 184,
       "event": "trace origin set to JIO-IN",
       "timestamp": "2026-09-01T19:01:36.742Z"

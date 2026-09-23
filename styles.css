@@ -28,6 +28,71 @@ button { cursor: pointer; }
 .command-actions .trace-on { color: #6fe3b9; border-color: #316351; background: #0d1c18; }
 .command-actions .primary { border-color: #64dcb1; color: #07100f; background: #64dcb1; font-weight: 500; }
 
+.relationship-workspace-switch { display: flex; border: 1px solid #263430; background: #050707; }
+.relationship-workspace-switch button { border: 0; border-right: 1px solid #263430; color: #70857e; background: transparent; }
+.relationship-workspace-switch button:last-child { border-right: 0; }
+.relationship-workspace-switch button.active { color: #07100f; background: #64dcb1; font-weight: 600; }
+
+.company-network-workspace { position: relative; display: flex; flex: 1; min-height: 0; height: calc(100vh - 180px); flex-direction: column; overflow: hidden; background: #000; animation: workspace-in .16s ease-out; }
+@keyframes workspace-in { from { opacity: .72; } to { opacity: 1; } }
+.company-network-toolbar { position: relative; z-index: 4; display: grid; grid-template-columns: minmax(300px, 1.15fr) auto auto; align-items: center; min-height: 86px; padding: 12px 22px; border-bottom: 1px solid #202a29; background: #050808; gap: 24px; }
+.company-search-block { position: relative; display: grid; gap: 7px; }
+.company-search-row { display: flex; width: min(520px, 100%); }
+.company-search-row label { display: flex; flex: 1; align-items: center; gap: 8px; padding: 8px 10px; border: 1px solid #2a3d37; background: #090e0e; color: #64dcb1; }
+.company-search-row > button { width: 90px; border: 1px solid #35604f; border-left: 0; color: #78dfbb; background: #0b1915; font: 9px 'DM Mono'; letter-spacing: .08em; }
+.company-search-block input { width: 100%; border: 0; outline: 0; color: #edf5f2; background: transparent; font: 11px 'DM Mono'; }
+.company-search-results { position: absolute; z-index: 20; top: 65px; left: 0; width: min(430px, 100%); border: 1px solid #355048; background: #070b0b; box-shadow: 0 18px 35px #000; }
+.company-search-results button { display: grid; width: 100%; gap: 3px; padding: 9px 11px; border: 0; border-bottom: 1px solid #17231f; color: #d9e8e3; background: transparent; text-align: left; }
+.company-search-results button:hover { background: #10221b; }
+.company-search-results strong { font-size: 11px; }
+.company-search-results span { color: #72877f; font: 9px 'DM Mono'; }
+.company-network-kpis { display: flex; height: 48px; border-left: 1px solid #202a29; }
+.company-network-kpis > span { display: grid; min-width: 76px; align-content: center; gap: 3px; padding: 0 15px; border-right: 1px solid #202a29; }
+.company-network-kpis small { color: #647972; font: 8px 'DM Mono'; letter-spacing: .09em; }
+.company-network-kpis b { color: #dce9e5; font: 600 15px 'DM Mono'; }
+.company-network-kpis .warn b { color: #ff6c7b; }
+.company-network-controls { display: flex; align-items: end; gap: 6px; }
+.company-network-controls label { display: grid; gap: 4px; color: #647972; font: 8px 'DM Mono'; letter-spacing: .08em; }
+.company-network-controls select, .company-network-controls button { height: 31px; padding: 0 9px; border: 1px solid #2a3a36; outline: 0; color: #a9beb7; background: #0a1010; font: 9px 'DM Mono'; }
+.company-network-controls button.active { border-color: #a94857; color: #ff7a88; background: #231015; }
+.company-network-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; flex: 1; min-height: 0; }
+.company-network-stage { position: relative; min-width: 0; overflow: hidden; border-right: 1px solid #202a29; background-color: #000; background-image: radial-gradient(rgba(66, 105, 93, .28) .65px, transparent .65px); background-size: 20px 20px; }
+.company-hover-readout { position: absolute; top: 14px; left: 14px; padding: 7px 9px; border-left: 2px solid #64dcb1; color: #d9e8e3; background: rgba(4,9,8,.94); font: 9px 'DM Mono'; }
+.company-network-loading, .company-network-error { position: absolute; z-index: 5; top: 14px; left: 14px; padding: 8px 10px; border-left: 2px solid #64dcb1; color: #a9cfc1; background: rgba(3, 8, 7, .94); font: 9px 'DM Mono'; letter-spacing: .08em; }
+.company-network-error { border-color: #ff5b6e; color: #ff8995; }
+.company-network-legend { position: absolute; z-index: 3; right: 14px; bottom: 14px; left: 14px; display: flex; width: max-content; max-width: calc(100% - 28px); align-items: center; gap: 13px; padding: 8px 10px; border: 1px solid #25342f; color: #8ca19a; background: rgba(5, 9, 8, .94); font: 8px 'DM Mono'; }
+.company-network-legend span { display: flex; align-items: center; gap: 5px; }
+.company-network-legend i { width: 7px; height: 7px; border-radius: 50%; box-shadow: 0 0 7px currentColor; }
+.company-network-legend em { color: #5d706a; font-style: normal; }
+.company-network-inspector { padding: 20px; overflow-y: auto; background: #060a0a; }
+.company-inspector-heading { padding-bottom: 17px; }
+.company-inspector-heading > i { display: inline-block; width: 9px; height: 9px; margin: 15px 7px 0 0; border-radius: 50%; }
+.company-inspector-heading > small { color: #899f97; font: 9px 'DM Mono'; text-transform: uppercase; }
+.company-inspector-heading h2 { margin: 12px 0 8px; color: #edf5f2; font-size: 19px; line-height: 1.15; }
+.company-inspector-heading p { margin: 0; color: #7f948c; font: 10px/1.5 'DM Mono'; }
+.company-risk-flags { display: grid; gap: 5px; padding: 10px; margin-bottom: 14px; border: 1px solid #66313b; background: #211015; }
+.company-risk-flags span { color: #ff7a88; font: 8px 'DM Mono'; }
+.company-facts { margin: 0; border-top: 1px solid #202c29; }
+.company-facts > div { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 9px 0; border-bottom: 1px solid #141d1a; }
+.company-facts dt { color: #647972; font: 9px 'DM Mono'; text-transform: uppercase; }
+.company-facts dd { margin: 0; color: #ccd9d5; font: 10px/1.4 'DM Mono'; text-align: right; overflow-wrap: anywhere; }
+.company-open-network, .company-source-link { display: block; width: 100%; padding: 9px 10px; margin-top: 14px; border: 1px solid #35604f; color: #70dfb7; background: #0c1b16; text-align: center; text-decoration: none; font: 9px 'DM Mono'; }
+.company-source-link { border-color: #293934; color: #8da39b; background: transparent; }
+.company-master-backdrop { position: fixed; z-index: 200; inset: 0; display: grid; place-items: center; padding: 7vh 5vw; background: rgba(0,0,0,.76); backdrop-filter: blur(3px); }
+.company-master { display: flex; width: min(1280px, 92vw); height: min(760px, 82vh); flex-direction: column; border: 1px solid #345348; background: #050808; box-shadow: 0 30px 100px #000; }
+.company-master > header { display: grid; grid-template-columns: 1fr auto 38px; align-items: center; min-height: 72px; padding: 12px 16px; border-bottom: 1px solid #263a34; }
+.company-master h2 { margin: 5px 0 0; color: #e6f0ed; font-size: 17px; }
+.company-master header b { padding: 7px 10px; margin-right: 14px; color: #64dcb1; background: #0d1b17; font: 10px 'DM Mono'; }
+.company-master header button { width: 32px; height: 32px; border: 1px solid #33443f; color: #9db0aa; background: transparent; font-size: 20px; }
+.company-master-filter { display: flex; align-items: center; gap: 10px; margin: 12px 16px; padding: 10px 12px; border: 1px solid #30453f; color: #64dcb1; background: #08100e; }
+.company-master-filter input { width: 100%; border: 0; outline: 0; color: #e5efec; background: transparent; font: 10px 'DM Mono'; }
+.company-master-table { flex: 1; margin: 0 16px 16px; overflow: auto; border: 1px solid #1f302b; }
+.company-master-row { display: grid; grid-template-columns: minmax(240px, 1.5fr) minmax(170px, 1fr) 150px 170px 140px; width: 100%; min-height: 38px; align-items: center; padding: 0 12px; border: 0; border-bottom: 1px solid #14221e; color: #aabdb7; background: transparent; text-align: left; font: 9px 'DM Mono'; }
+button.company-master-row:hover { color: #eff8f5; background: #10231c; }
+.company-master-row strong { color: #dce9e5; font: 500 10px Inter; }
+.company-master-row code { color: #69cdaa; overflow: hidden; text-overflow: ellipsis; }
+.company-master-head { position: sticky; z-index: 2; top: 0; min-height: 30px; color: #617870; background: #09100e; letter-spacing: .08em; }
+
 .workbench { display: grid; grid-template-columns: 260px minmax(500px, 1fr) 320px; flex: 1; min-height: 0; height: calc(100vh - 180px); overflow: hidden; }
 .filter-rail { padding: 18px; background: #0b1011; border-right: 1px solid #202a29; overflow-y: auto; overflow-x: hidden; height: 100%; display: flex; flex-direction: column; }
 .inspector { padding: 18px; background: #0b1011; border-left: 1px solid #202a29; overflow-y: auto; overflow-x: hidden; height: 100%; }

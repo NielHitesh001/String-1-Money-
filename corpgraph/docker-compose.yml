@@ -1,0 +1,57 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:-corpgraph-local}"
+      CORPGRAPH_NEO4J_PASSWORD: "${NEO4J_PASSWORD:-corpgraph-local}"
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 1G
+    volumes:
+      - corpgraph_neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p $${CORPGRAPH_NEO4J_PASSWORD} 'RETURN 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6379:6379"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  volume-backup:
+    image: alpine:3.20
+    profiles: ["ops"]
+    environment:
+      BACKUP_NAME: "${BACKUP_NAME:-corpgraph-backup}"
+    volumes:
+      - corpgraph_neo4j_data:/source:ro
+      - ./backups:/backups
+    command: ["sh", "-c", "tar -czf /backups/$${BACKUP_NAME}.tar.gz -C /source ."]
+
+  volume-restore:
+    image: alpine:3.20
+    profiles: ["ops"]
+    environment:
+      BACKUP_FILE: "${BACKUP_FILE:-missing-backup}"
+    volumes:
+      - corpgraph_neo4j_data:/target
+      - ./backups:/backups:ro
+    command:
+      - sh
+      - -c
+      - "find /target -mindepth 1 -maxdepth 1 -exec rm -rf {} + && tar -xzf /backups/$${BACKUP_FILE} -C /target"
+
+volumes:
+  corpgraph_neo4j_data:

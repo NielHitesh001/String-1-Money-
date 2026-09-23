@@ -7,6 +7,52 @@ on:
     branches: [ main ]
 
 jobs:
+  corpgraph_frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: corpgraph/frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: corpgraph/frontend/package-lock.json
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run build
+
+  corpgraph:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: corpgraph
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: corpgraph/pyproject.toml
+
+      - name: Install CorpGraph
+        run: python -m pip install -e '.[dev]'
+
+      - name: Lint CorpGraph
+        run: ruff check .
+
+      - name: Type-check CorpGraph
+        run: mypy
+
+      - name: Test CorpGraph
+        run: pytest
+
   test_and_build:
     runs-on: ubuntu-latest
 

@@ -1,0 +1,30 @@
+{
+  "name": "corpgraph-explorer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run --coverage",
+    "format:check": "prettier --check src vite.config.js package.json tsconfig.json index.html"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/cytoscape": "^3.21.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.9.8",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "^4.1.11"
+  }
+}

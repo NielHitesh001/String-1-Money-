@@ -1,0 +1,8 @@
+sec_edgar:
+  submissions_url: "https://data.sec.gov/submissions/CIK{cik}.json"
+  archives_base_url: "https://www.sec.gov/Archives/edgar/data"
+  requests_per_second: 5
+  timeout_seconds: 30
+  max_retries: 3
+  backoff_seconds: 1.0
+

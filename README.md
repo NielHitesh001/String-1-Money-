@@ -25,6 +25,13 @@ The platform combines a high-performance React/WebGL analyst interface with a No
 
 The current implementation is suitable for internal analysis and paper-only operation. Live broker execution is deliberately denied. The event-sourced ledger/projector architecture remains pending a Legal/Compliance decision and is not represented as implemented.
 
+## CorpGraph service
+
+The corporate OSINT project is being developed as an isolated Python/Neo4j service under
+[`corpgraph/`](corpgraph/README.md). Its first milestone extracts subsidiary relationships from
+SEC EDGAR 10-K Exhibit 21 filings and loads validated, provenance-rich records into Neo4j without
+changing the World Money runtime.
+
 ## Run locally
 
 ```bash

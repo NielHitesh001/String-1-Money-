@@ -2,6 +2,7 @@ import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "r
 import BloombergBlotter from "./components/BloombergBlotter";
 import CentralBankPolicyHub from "./components/CentralBankPolicyHub";
 import ConnectionFinder from "./components/ConnectionFinder";
+import CompanyNetworkPanel from "./components/CompanyNetworkPanel";
 import EntityGraph from "./components/EntityGraph";
 import FxPolicyConverter from "./components/FxPolicyConverter";
 import MacroLiquidityPanel from "./components/MacroLiquidityPanel";
@@ -54,6 +55,7 @@ export default function FinancialIntelligencePlatform() {
   const [activeTab, setActiveTab] = useState("terminal"); // "terminal" | "liquidity" | "investigate"
   const [liquiditySubView, setLiquiditySubView] = useState("macro"); // "macro" | "rails" | "centralbanks" | "converter" | "network"
   const [investigationViewMode, setInvestigationViewMode] = useState("graph"); // "graph" | "blotter"
+  const [relationshipWorkspace, setRelationshipWorkspace] = useState("companies"); // "companies" | "flows"
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
   const [serverOnline, setServerOnline] = useState(false);
   const [focusedSymbol, setFocusedSymbol] = useState("EUR/USD");
@@ -439,7 +441,10 @@ export default function FinancialIntelligencePlatform() {
           </button>
           <button
             className={activeTab === "investigate" ? "active" : ""}
-            onClick={() => setActiveTab("investigate")}
+            onClick={() => {
+              setActiveTab("investigate");
+              setRelationshipWorkspace("companies");
+            }}
           >
             Relationship Intelligence
           </button>
@@ -568,8 +573,9 @@ export default function FinancialIntelligencePlatform() {
         <>
           <section className="commandbar">
             <div className="breadcrumb">
-              INVESTIGATIONS <i>/</i> {activeCase.id} <strong>{activeCase.title}</strong>
-              {role === "Analyst" ? (
+              RELATIONSHIP INTELLIGENCE <i>/</i>{" "}
+              <strong>{relationshipWorkspace === "companies" ? "Company Network" : `${activeCase.id} ${activeCase.title}`}</strong>
+              {relationshipWorkspace === "flows" && (role === "Analyst" ? (
                 <span className="case-status">{activeCase.status}</span>
               ) : (
                 <label className="case-status">
@@ -580,9 +586,14 @@ export default function FinancialIntelligencePlatform() {
                     <option>Closed</option>
                   </select>
                 </label>
-              )}
+              ))}
             </div>
             <div className="command-actions">
+              <div className="relationship-workspace-switch" role="group" aria-label="Relationship workspace">
+                <button className={relationshipWorkspace === "companies" ? "active" : ""} onClick={() => setRelationshipWorkspace("companies")}>◎ Company network</button>
+                <button className={relationshipWorkspace === "flows" ? "active" : ""} onClick={() => setRelationshipWorkspace("flows")}>⇄ Transaction flows</button>
+              </div>
+              {relationshipWorkspace === "flows" && <>
               <button
                 onClick={() => {
                   setTraceMode(!traceMode);
@@ -617,9 +628,14 @@ export default function FinancialIntelligencePlatform() {
                   {activeCase.itemIds.includes(selected.value) ? "In active case" : "+ Add to case"}
                 </button>
               )}
+              </>}
             </div>
           </section>
 
+          {relationshipWorkspace === "companies" ? (
+            <CompanyNetworkPanel onAudit={recordAudit} />
+          ) : (
+          <>
           <section className="workbench">
             <aside className="filter-rail">
               <div className="rail-title">
@@ -1050,6 +1066,8 @@ export default function FinancialIntelligencePlatform() {
             ))}
             <button className="case-more">View all cases →</button>
           </section>
+          </>
+          )}
         </>
       )}
 

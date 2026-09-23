@@ -1,0 +1,24 @@
+{$CORPGRAPH_SITE_ADDRESS::8080} {
+    encode zstd gzip
+
+    @backend path /api/* /health /ready /metrics /docs* /openapi.json
+    handle @backend {
+        reverse_proxy api:8000 {
+            header_up X-API-Key {$CORPGRAPH_API_KEY}
+        }
+    }
+
+    handle {
+        root * /srv
+        try_files {path} /index.html
+        file_server
+    }
+
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy no-referrer
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+        -Server
+    }
+}
