@@ -1,13 +1,16 @@
 import React, { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import AlertBanner from "./components/AlertBanner";
 import BloombergBlotter from "./components/BloombergBlotter";
 import CentralBankPolicyHub from "./components/CentralBankPolicyHub";
 import ConnectionFinder from "./components/ConnectionFinder";
 import CompanyNetworkPanel from "./components/CompanyNetworkPanel";
+import EntityComparisonModal from "./components/EntityComparisonModal";
 import EntityGraph from "./components/EntityGraph";
 import FxPolicyConverter from "./components/FxPolicyConverter";
 import MacroLiquidityPanel from "./components/MacroLiquidityPanel";
 import NetworkCanvas from "./components/NetworkCanvas";
 import PaymentRailsMatrix from "./components/PaymentRailsMatrix";
+import RiskScorePopover from "./components/RiskScorePopover";
 import CommandPalette from "./components/Terminal/CommandPalette.jsx";
 import LiveTickerRibbon from "./components/Terminal/LiveTickerRibbon.jsx";
 import TerminalWorkspace from "./components/Terminal/TerminalWorkspace.jsx";
@@ -40,6 +43,7 @@ const maskIdentifier = (value) => {
 };
 
 const savedViewStorageKey = "moneytrace.saved-views.v1";
+const themeStorageKey = "worldmoney.theme.v1";
 
 function loadSavedViews() {
   try {
@@ -51,11 +55,20 @@ function loadSavedViews() {
   }
 }
 
+function loadInitialTheme() {
+  try {
+    return window.localStorage.getItem(themeStorageKey) || "dark";
+  } catch {
+    return "dark";
+  }
+}
+
 export default function FinancialIntelligencePlatform() {
+  const [theme, setTheme] = useState(loadInitialTheme);
   const [activeTab, setActiveTab] = useState("terminal"); // "terminal" | "liquidity" | "investigate"
   const [liquiditySubView, setLiquiditySubView] = useState("macro"); // "macro" | "rails" | "centralbanks" | "converter" | "network"
   const [investigationViewMode, setInvestigationViewMode] = useState("graph"); // "graph" | "blotter"
-  const [relationshipWorkspace, setRelationshipWorkspace] = useState("companies"); // "companies" | "flows"
+  const [relationshipWorkspace, setRelationshipWorkspace] = useState("flows"); // "flows" | "companies"
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
   const [serverOnline, setServerOnline] = useState(false);
   const [focusedSymbol, setFocusedSymbol] = useState("EUR/USD");
@@ -72,6 +85,13 @@ export default function FinancialIntelligencePlatform() {
   const [selected, setSelected] = useState({ type: "transaction", value: "TX-2026-08494" });
   const [traceMode, setTraceMode] = useState(true);
   const [traceOrigin, setTraceOrigin] = useState("JPM-US");
+  const [focusMode, setFocusMode] = useState(false);
+  const [activeLayerFilter, setActiveLayerFilter] = useState("all");
+  const [alertSeverityFilter, setAlertSeverityFilter] = useState(null); // null | "critical" | "elevated" | "standard"
+  const [bannerDismissed, setBannerDismissed] = useState(false);
+  const [compareModalOpen, setCompareModalOpen] = useState(false);
+  const [inspectorPopoverOpen, setInspectorPopoverOpen] = useState(false);
+
   const [audit, setAudit] = useState(["09:42 — session authenticated", "09:44 — trace started: Baltic routing anomaly"]);
   const [activeCaseId, setActiveCaseId] = useState("CASE-1842");
   const [caseItems, setCaseItems] = useState(() =>
@@ -93,6 +113,14 @@ export default function FinancialIntelligencePlatform() {
   const entities = workspace.entities;
   const transactions = workspace.transactions;
   const deferredQuery = useDeferredValue(query);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    try {
+      window.localStorage.setItem(themeStorageKey, nextTheme);
+    } catch {}
+  };
 
   const recordAudit = (event) => {
     setAudit((events) => [`09:49 — ${event}`, ...events]);
@@ -119,62 +147,54 @@ export default function FinancialIntelligencePlatform() {
     return () => clearTimeout(handler);
   }, [savedViews]);
 
-  const entityById = useMemo(() => new Map(entities.map((entity) => [entity.id, entity])), [entities]);
+  // Entities mapped by ID
+  const entityById = useMemo(() => new Map(entities.map((e) => [e.id, e])), [entities]);
 
-  // Pre-index search tokens to avoid N^2 string allocations on every keystroke
-  const txSearchIndex = useMemo(() => {
-    const map = new Map();
-    for (let i = 0; i < transactions.length; i++) {
-      const tx = transactions[i];
-      const source = entityById.get(tx.source);
-      const target = entityById.get(tx.target);
-      const str = `${tx.id} ${tx.currency || ""} ${tx.rail || ""} ${tx.flag || ""} ${source?.name || ""} ${target?.name || ""}`.toLowerCase();
-      map.set(tx.id, str);
-    }
-    return map;
-  }, [transactions, entityById]);
-
-  const datasetNow = useMemo(
-    () => transactions.reduce((latest, item) => Math.max(latest, Date.parse(item.date || "") || 0), 0),
-    [transactions]
-  );
-
+  // Candidate transactions filtered by query and controls
   const matchingTransactions = useMemo(() => {
-    const normalizedQuery = deferredQuery.trim().toLowerCase();
-    const windowCutoff =
-      dateWindow === "Last 24 hours" ? datasetNow - 86_400_000 : dateWindow === "Last 7 days" ? datasetNow - 604_800_000 : 0;
-
     return transactions.filter((tx) => {
-      if (tx.risk < minimumRisk || tx.amount < minimumAmount) return false;
+      if (minimumRisk > 0 && tx.risk < minimumRisk) return false;
+      if (minimumAmount > 0 && tx.amount < minimumAmount) return false;
       if (currency !== "All currencies" && tx.currency !== currency) return false;
       if (flaggedOnly && !tx.flag) return false;
 
-      if (windowCutoff) {
-        const transactionDate = Date.parse(tx.date || "");
-        if (!Number.isFinite(transactionDate) || transactionDate < windowCutoff) return false;
-      }
+      // Severity chip filter
+      if (alertSeverityFilter === "critical" && tx.risk < 80) return false;
+      if (alertSeverityFilter === "elevated" && (tx.risk < 55 || tx.risk >= 80)) return false;
+      if (alertSeverityFilter === "standard" && tx.risk >= 55) return false;
 
-      if (crossBorderOnly) {
-        const source = entityById.get(tx.source);
-        const target = entityById.get(tx.target);
-        if (source && target && source.country === target.country) return false;
-      }
-
-      if (normalizedQuery) {
-        const cachedStr = txSearchIndex.get(tx.id);
-        if (!cachedStr || !cachedStr.includes(normalizedQuery)) return false;
+      // Query filter
+      if (deferredQuery.trim()) {
+        const needle = deferredQuery.trim().toLowerCase();
+        const sourceName = entityById.get(tx.source)?.name?.toLowerCase() || "";
+        const targetName = entityById.get(tx.target)?.name?.toLowerCase() || "";
+        const idMatch = tx.id.toLowerCase().includes(needle);
+        const sourceMatch = tx.source.toLowerCase().includes(needle) || sourceName.includes(needle);
+        const targetMatch = tx.target.toLowerCase().includes(needle) || targetName.includes(needle);
+        if (!idMatch && !sourceMatch && !targetMatch) return false;
       }
 
       return true;
     });
-  }, [transactions, entityById, txSearchIndex, datasetNow, deferredQuery, minimumRisk, minimumAmount, currency, dateWindow, crossBorderOnly, flaggedOnly]);
+  }, [transactions, minimumRisk, minimumAmount, currency, flaggedOnly, alertSeverityFilter, deferredQuery, entityById]);
 
-  const candidateEntityIds = useMemo(() => new Set(matchingTransactions.flatMap((tx) => [tx.source, tx.target])), [matchingTransactions]);
+  // Candidate entities connected by matching transactions
+  const candidateEntityIds = useMemo(() => {
+    const set = new Set();
+    matchingTransactions.forEach((tx) => {
+      set.add(tx.source);
+      set.add(tx.target);
+    });
+    return set;
+  }, [matchingTransactions]);
+
   const visibleEntities = useMemo(
-    () => entities.filter((entity) => candidateEntityIds.has(entity.id)).sort((a, b) => b.risk - a.risk).slice(0, MAX_RENDERED_NODES),
+    () => entities.filter((e) => candidateEntityIds.has(e.id)).slice(0, MAX_RENDERED_NODES),
     [entities, candidateEntityIds]
   );
-  const visibleEntityIds = useMemo(() => new Set(visibleEntities.map((entity) => entity.id)), [visibleEntities]);
+
+  const visibleEntityIds = useMemo(() => new Set(visibleEntities.map((e) => e.id)), [visibleEntities]);
+
   const visibleTransactions = useMemo(
     () =>
       matchingTransactions
@@ -183,6 +203,11 @@ export default function FinancialIntelligencePlatform() {
         .slice(0, MAX_RENDERED_EDGES),
     [matchingTransactions, visibleEntityIds]
   );
+
+  // Alert counts
+  const criticalCount = useMemo(() => transactions.filter((t) => t.risk >= 80).length, [transactions]);
+  const elevatedCount = useMemo(() => transactions.filter((t) => t.risk >= 55 && t.risk < 80).length, [transactions]);
+  const standardCount = useMemo(() => transactions.filter((t) => t.risk < 55).length, [transactions]);
 
   const alertQueue = useMemo(
     () =>
@@ -193,28 +218,41 @@ export default function FinancialIntelligencePlatform() {
     [matchingTransactions, triagedAlerts]
   );
 
-  const selectedObject = selected.type === "entity" ? entities.find((entity) => entity.id === selected.value) : transactions.find((tx) => tx.id === selected.value);
+  const selectedObject =
+    selected.type === "entity"
+      ? entities.find((entity) => entity.id === selected.value)
+      : transactions.find((tx) => tx.id === selected.value);
+
   const select = (next) => {
+    if (next.type === "clear") {
+      setSelected({ type: "transaction", value: "TX-2026-08494" });
+      return;
+    }
     setSelected(next);
     recordAudit(`inspected ${formats[next.type].toLowerCase()} ${next.value}`);
   };
-  const inspectItem = selected.type === "entity" ? selectedObject : entities.find((entity) => entity.id === selectedObject?.target);
+
+  const inspectItem =
+    selected.type === "entity"
+      ? selectedObject
+      : entities.find((entity) => entity.id === selectedObject?.target);
+
   const projectSensitive = (value) => (role === "Analyst" ? maskIdentifier(value) : value || "—");
   const activeCase = caseItems.find((item) => item.id === activeCaseId) || caseItems[0];
   const traceTarget = selected.type === "entity" ? selected.value : selectedObject?.target;
   const trace = traceMode ? findDirectedPath(visibleTransactions, traceOrigin, traceTarget) : { nodeIds: [], edgeIds: [] };
 
-  const addToCase = () => {
-    if (activeCase.itemIds.includes(selected.value)) return;
+  const addToCase = (txId = selected.value) => {
+    if (activeCase.itemIds.includes(txId)) return;
     const updatedCase = {
       ...activeCase,
-      itemIds: [...activeCase.itemIds, selected.value],
+      itemIds: [...activeCase.itemIds, txId],
       transactions: activeCase.transactions + 1,
       updated: "just now",
     };
     setCaseItems((items) => items.map((item) => (item.id === activeCaseId ? updatedCase : item)));
     syncCaseApi(updatedCase);
-    recordAudit(`${selected.value} added to ${activeCaseId}`);
+    recordAudit(`${txId} added to ${activeCaseId}`);
   };
 
   const flagForReview = () => {
@@ -222,10 +260,9 @@ export default function FinancialIntelligencePlatform() {
     recordAudit(`${selected.value} flagged for investigator review`);
   };
 
-  const resolveAlert = () => {
-    if (selected.type !== "transaction") return;
-    setTriagedAlerts((items) => new Set([...items, selected.value]));
-    recordAudit(`alert triaged: ${selected.value}`);
+  const resolveAlert = (txId = selected.value) => {
+    setTriagedAlerts((items) => new Set([...items, txId]));
+    recordAudit(`alert triaged: ${txId}`);
   };
 
   const updateCaseStatus = (status) => {
@@ -271,6 +308,22 @@ export default function FinancialIntelligencePlatform() {
     setSelected(snapshot.selected);
     setActiveCaseId(snapshot.activeCaseId);
     recordAudit("restored saved investigation view");
+  };
+
+  const applyPresetSearch = (preset) => {
+    if (preset === "high_risk") {
+      setMinimumRisk(80);
+      setCrossBorderOnly(true);
+      setFlaggedOnly(false);
+      setQuery("");
+    } else if (preset === "apple") {
+      setQuery("Apple");
+      setMinimumRisk(0);
+    } else if (preset === "baltic") {
+      setQuery("Harbor");
+      setMinimumRisk(60);
+    }
+    recordAudit(`applied saved preset search: ${preset}`);
   };
 
   const importBatch = async (event) => {
@@ -419,7 +472,7 @@ export default function FinancialIntelligencePlatform() {
   };
 
   return (
-    <main className="intel-app">
+    <main className={`intel-app theme-${theme}`} data-theme={theme}>
       <header className="topbar">
         <div className="brand">
           <span className="brand-glyph">W</span>
@@ -441,10 +494,7 @@ export default function FinancialIntelligencePlatform() {
           </button>
           <button
             className={activeTab === "investigate" ? "active" : ""}
-            onClick={() => {
-              setActiveTab("investigate");
-              setRelationshipWorkspace("companies");
-            }}
+            onClick={() => setActiveTab("investigate")}
           >
             Relationship Intelligence
           </button>
@@ -482,7 +532,17 @@ export default function FinancialIntelligencePlatform() {
           />
         </div>
 
+        {/* THEME TOGGLE & OPERATOR SECTION */}
         <div className="operator">
+          <button
+            type="button"
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
+          >
+            {theme === "dark" ? "☀️ Light" : "🌙 Dark"}
+          </button>
+
           <span className={`live-dot ${serverOnline ? "server-live" : ""}`} /> {serverOnline ? "API Connected" : "Local Session"}
           <label className="role-switch">
             <span>ROLE</span>
@@ -507,6 +567,19 @@ export default function FinancialIntelligencePlatform() {
         setFocusedSymbol(sym);
         setActiveTab("terminal");
       }} />
+
+      {/* FLOATING HIGH-RISK ALERT BANNER */}
+      {!bannerDismissed && (
+        <AlertBanner
+          criticalCount={criticalCount}
+          elevatedCount={elevatedCount}
+          standardCount={standardCount}
+          activeFilter={alertSeverityFilter}
+          onFilterSelect={(sev) => setAlertSeverityFilter(sev)}
+          onClearFilter={() => setAlertSeverityFilter(null)}
+          onDismissBanner={() => setBannerDismissed(true)}
+        />
+      )}
 
       {/* VIEW 0: MARKET INTELLIGENCE WORKSPACE */}
       {activeTab === "terminal" && (
@@ -575,7 +648,7 @@ export default function FinancialIntelligencePlatform() {
             <div className="breadcrumb">
               RELATIONSHIP INTELLIGENCE <i>/</i>{" "}
               <strong>{relationshipWorkspace === "companies" ? "Company Network" : `${activeCase.id} ${activeCase.title}`}</strong>
-              {relationshipWorkspace === "flows" && (role === "Analyst" ? (
+              {role === "Analyst" ? (
                 <span className="case-status">{activeCase.status}</span>
               ) : (
                 <label className="case-status">
@@ -586,14 +659,23 @@ export default function FinancialIntelligencePlatform() {
                     <option>Closed</option>
                   </select>
                 </label>
-              ))}
+              )}
             </div>
             <div className="command-actions">
               <div className="relationship-workspace-switch" role="group" aria-label="Relationship workspace">
-                <button className={relationshipWorkspace === "companies" ? "active" : ""} onClick={() => setRelationshipWorkspace("companies")}>◎ Company network</button>
                 <button className={relationshipWorkspace === "flows" ? "active" : ""} onClick={() => setRelationshipWorkspace("flows")}>⇄ Transaction flows</button>
+                <button className={relationshipWorkspace === "companies" ? "active" : ""} onClick={() => setRelationshipWorkspace("companies")}>◎ Company network</button>
               </div>
-              {relationshipWorkspace === "flows" && <>
+
+              {/* Stationary Action Buttons Ribbon */}
+              <button
+                type="button"
+                className="compare-header-btn"
+                onClick={() => setCompareModalOpen(true)}
+                title="Open Side-by-Side Entity Comparison"
+              >
+                ⇄ Compare Entities
+              </button>
               <button
                 onClick={() => {
                   setTraceMode(!traceMode);
@@ -602,6 +684,13 @@ export default function FinancialIntelligencePlatform() {
                 className={traceMode ? "trace-on" : ""}
               >
                 ◉ {traceMode ? "Tracing active" : "Trace path"}
+              </button>
+              <button
+                onClick={() => setFocusMode(!focusMode)}
+                className={focusMode ? "trace-on" : ""}
+                title="Isolate 3-hop neighborhood around selected entity"
+              >
+                ✦ {focusMode ? "Focus mode on" : "Focus 3-hops"}
               </button>
               <button onClick={saveView}>Save view</button>
               {savedViews.length > 0 && <button onClick={restoreView}>Restore view</button>}
@@ -624,16 +713,18 @@ export default function FinancialIntelligencePlatform() {
                   {flaggedItems.has(selected.value) ? "Flag submitted" : "+ Flag for review"}
                 </button>
               ) : (
-                <button className="primary" disabled={activeCase.itemIds.includes(selected.value)} onClick={addToCase}>
+                <button className="primary" disabled={activeCase.itemIds.includes(selected.value)} onClick={() => addToCase(selected.value)}>
                   {activeCase.itemIds.includes(selected.value) ? "In active case" : "+ Add to case"}
                 </button>
               )}
-              </>}
             </div>
           </section>
 
           {relationshipWorkspace === "companies" ? (
-            <CompanyNetworkPanel onAudit={recordAudit} />
+            <CompanyNetworkPanel
+              onAudit={recordAudit}
+              onCompareWithEntity={(dossier) => setCompareModalOpen(true)}
+            />
           ) : (
           <>
           <section className="workbench">
@@ -649,15 +740,28 @@ export default function FinancialIntelligencePlatform() {
                     setDateWindow("All dates");
                     setCrossBorderOnly(true);
                     setFlaggedOnly(false);
+                    setAlertSeverityFilter(null);
                   }}
                 >
                   Reset
                 </button>
               </div>
+
+              {/* SAVED SEARCH PRESETS */}
+              <div className="saved-presets-block">
+                <span className="preset-label">PRESET INVESTIGATIONS:</span>
+                <div className="preset-chips">
+                  <button type="button" onClick={() => applyPresetSearch("high_risk")}>🔥 High-Risk Corridors</button>
+                  <button type="button" onClick={() => applyPresetSearch("apple")}>🏛 Apple Ecosystem</button>
+                  <button type="button" onClick={() => applyPresetSearch("baltic")}>⚡ Baltic Anomaly</button>
+                </div>
+              </div>
+
               <label className="search">
                 <span>⌕</span>
                 <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search entity or transaction" />
               </label>
+
               <fieldset>
                 <legend>Transaction risk</legend>
                 <div className="risk-scale">
@@ -678,6 +782,7 @@ export default function FinancialIntelligencePlatform() {
                   <span>90+</span>
                 </div>
               </fieldset>
+
               <fieldset>
                 <legend>Currency</legend>
                 {["All currencies", "USD", "EUR", "GBP", "AED"].map((item) => (
@@ -687,6 +792,7 @@ export default function FinancialIntelligencePlatform() {
                   </label>
                 ))}
               </fieldset>
+
               <fieldset>
                 <legend>Transaction volume</legend>
                 <label className="choice">
@@ -711,6 +817,7 @@ export default function FinancialIntelligencePlatform() {
                   $50M+
                 </label>
               </fieldset>
+
               <fieldset>
                 <legend>Date range</legend>
                 {["All dates", "Last 24 hours", "Last 7 days"].map((item) => (
@@ -720,6 +827,7 @@ export default function FinancialIntelligencePlatform() {
                   </label>
                 ))}
               </fieldset>
+
               <fieldset>
                 <legend>Flow type</legend>
                 <label className="choice">
@@ -729,6 +837,7 @@ export default function FinancialIntelligencePlatform() {
                   <input type="checkbox" checked={flaggedOnly} onChange={(event) => setFlaggedOnly(event.target.checked)} /> Flagged flows
                 </label>
               </fieldset>
+
               <div className="scope">
                 <span>VIEW SCOPE</span>
                 <strong>
@@ -736,6 +845,7 @@ export default function FinancialIntelligencePlatform() {
                 </strong>
                 <small>Rendering is capped at 2,000 nodes and 5,000 flows, prioritized by risk and exposure.</small>
               </div>
+
               <section className="alert-queue">
                 <div>
                   <span>ALERT TRIAGE</span>
@@ -804,7 +914,10 @@ export default function FinancialIntelligencePlatform() {
                     selectedId={selected.value}
                     trace={trace}
                     onSelect={select}
+                    onInspect={select}
                     actionsRef={graphActions}
+                    focusMode={focusMode}
+                    activeLayerFilter={activeLayerFilter}
                   />
                   <div className="graph-tools">
                     <button aria-label="Zoom in" onClick={() => graphActions.current?.zoomIn()}>
@@ -846,15 +959,15 @@ export default function FinancialIntelligencePlatform() {
                   )}
                   <div className="legend">
                     <span>
-                      <i className="low" />Standard
+                      <i className="low" />Standard (&lt;55)
                     </span>
                     <span>
-                      <i className="mid" />Elevated
+                      <i className="mid" />Elevated (55-79)
                     </span>
                     <span>
-                      <i className="high" />Critical
+                      <i className="high" />Critical (&ge;80)
                     </span>
-                    <em>Click a node or flow to inspect</em>
+                    <em>Click to highlight · Double-click to inspect</em>
                   </div>
                 </div>
               ) : (
@@ -868,7 +981,8 @@ export default function FinancialIntelligencePlatform() {
                     setTraceMode(true);
                     recordAudit(`trace origin set to ${originId}`);
                   }}
-                  onAddToCase={addToCase}
+                  onAddToCase={(txId) => addToCase(txId)}
+                  onDismissAlert={(txId) => resolveAlert(txId)}
                   activeCaseId={activeCaseId}
                   role={role}
                 />
@@ -885,14 +999,29 @@ export default function FinancialIntelligencePlatform() {
               </div>
               {selectedObject && (
                 <>
-                  <div className={`risk-banner risk-${riskLabel(selectedObject.risk).toLowerCase()}`}>
-                    <span>RISK SCORE</span>
+                  <div
+                    className={`risk-banner risk-${riskLabel(selectedObject.risk).toLowerCase()} clickable-risk-banner`}
+                    onClick={() => setInspectorPopoverOpen(true)}
+                    title="Click for factor score decomposition"
+                  >
+                    <span>RISK SCORE (Click for Breakdown)</span>
                     <strong>
                       {selectedObject.risk}
                       <small>/100</small>
                     </strong>
                     <em>{riskLabel(selectedObject.risk)}</em>
                   </div>
+
+                  {/* Popover on Inspector */}
+                  {inspectorPopoverOpen && (
+                    <RiskScorePopover
+                      transaction={selected.type === "transaction" ? selectedObject : { risk: selectedObject.risk, amount: selectedObject.volume || 15000000, rail: "SWIFT" }}
+                      sourceEntity={selected.type === "transaction" ? entityById.get(selectedObject.source) : selectedObject}
+                      targetEntity={selected.type === "transaction" ? entityById.get(selectedObject.target) : inspectItem}
+                      onClose={() => setInspectorPopoverOpen(false)}
+                    />
+                  )}
+
                   <section className="detail-block">
                     <h3>{selected.type === "transaction" ? "Flow detail" : "Institution detail"}</h3>
                     {selected.type === "transaction" ? (
@@ -978,7 +1107,7 @@ export default function FinancialIntelligencePlatform() {
                           : "Open alert — review routing context and disposition the signal."}
                       </p>
                       {role !== "Analyst" && (
-                        <button className="secondary" disabled={triagedAlerts.has(selectedObject.id)} onClick={resolveAlert}>
+                        <button className="secondary" disabled={triagedAlerts.has(selectedObject.id)} onClick={() => resolveAlert(selectedObject.id)}>
                           {triagedAlerts.has(selectedObject.id) ? "Triaged" : "Mark triaged"}
                         </button>
                       )}
@@ -1005,6 +1134,12 @@ export default function FinancialIntelligencePlatform() {
                         Trace from this entity →
                       </button>
                     )}
+                    <button
+                      className="secondary"
+                      onClick={() => setCompareModalOpen(true)}
+                    >
+                      ⇄ Compare with Counterparty
+                    </button>
                   </section>
                   <section className="detail-block case-note">
                     <h3>Investigator note</h3>
@@ -1069,6 +1204,60 @@ export default function FinancialIntelligencePlatform() {
           </>
           )}
         </>
+      )}
+
+      {/* MOBILE / TABLET RESPONSIVE BOTTOM NAVIGATION */}
+      <nav className="mobile-tab-bar" aria-label="Mobile View Navigation">
+        <button
+          className={activeTab === "terminal" ? "active" : ""}
+          onClick={() => setActiveTab("terminal")}
+        >
+          <span className="mob-icon">📊</span>
+          <span>Market</span>
+        </button>
+        <button
+          className={activeTab === "investigate" && relationshipWorkspace === "companies" ? "active" : ""}
+          onClick={() => {
+            setActiveTab("investigate");
+            setRelationshipWorkspace("companies");
+          }}
+        >
+          <span className="mob-icon">◎</span>
+          <span>Company Graph</span>
+        </button>
+        <button
+          className={activeTab === "investigate" && relationshipWorkspace === "flows" ? "active" : ""}
+          onClick={() => {
+            setActiveTab("investigate");
+            setRelationshipWorkspace("flows");
+            setInvestigationViewMode("blotter");
+          }}
+        >
+          <span className="mob-icon">⇄</span>
+          <span>Flows</span>
+        </button>
+        <button
+          className={compareModalOpen ? "active" : ""}
+          onClick={() => setCompareModalOpen(true)}
+        >
+          <span className="mob-icon">⇄</span>
+          <span>Compare</span>
+        </button>
+      </nav>
+
+      {/* SIDE-BY-SIDE ENTITY COMPARISON MODAL */}
+      {compareModalOpen && (
+        <EntityComparisonModal
+          entities={entities}
+          initialEntityA={selected.type === "entity" ? selectedObject : entityById.get(selectedObject?.source)}
+          initialEntityB={inspectItem}
+          transactions={transactions}
+          onClose={() => setCompareModalOpen(false)}
+          onSelectEntity={(target) => {
+            select(target);
+            setCompareModalOpen(false);
+          }}
+        />
       )}
 
       {/* AUDIT OVERLAY */}

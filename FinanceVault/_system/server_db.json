@@ -5,7 +5,7 @@
       "title": "Baltic routing anomaly",
       "severity": "Critical",
       "status": "Open",
-      "transactions": 7,
+      "transactions": 8,
       "updated": "just now",
       "itemIds": [
         "TX-2026-08492",
@@ -14,7 +14,8 @@
         "TX-2026-08495",
         "JPM-US",
         "SBI-IN",
-        "TX-2026-08501"
+        "TX-2026-08501",
+        "NORD-EE"
       ],
       "notes": []
     },
@@ -40,6 +41,1506 @@
     }
   ],
   "audit": [
+    {
+      "sequence": 507,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:52:00.959Z"
+    },
+    {
+      "sequence": 506,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:52:00.458Z"
+    },
+    {
+      "sequence": 505,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:51:57.392Z"
+    },
+    {
+      "sequence": 504,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:51:56.059Z"
+    },
+    {
+      "sequence": 503,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:51:55.175Z"
+    },
+    {
+      "sequence": 502,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:51:50.426Z"
+    },
+    {
+      "sequence": 501,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:51:47.175Z"
+    },
+    {
+      "sequence": 500,
+      "event": "selected recommended company: Apple Inc. (wikidata_Q312)",
+      "timestamp": "2026-09-23T04:51:47.161Z"
+    },
+    {
+      "sequence": 499,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:51:38.750Z"
+    },
+    {
+      "sequence": 498,
+      "event": "selected route node: JIO-IN",
+      "timestamp": "2026-09-23T04:51:34.776Z"
+    },
+    {
+      "sequence": 497,
+      "event": "selected route node: BLACKROCK-US",
+      "timestamp": "2026-09-23T04:51:32.402Z"
+    },
+    {
+      "sequence": 496,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:51:19.955Z"
+    },
+    {
+      "sequence": 495,
+      "event": "selected route node: NORD-EE",
+      "timestamp": "2026-09-23T04:51:12.159Z"
+    },
+    {
+      "sequence": 494,
+      "event": "selected route node: NORD-EE",
+      "timestamp": "2026-09-23T04:51:11.559Z"
+    },
+    {
+      "sequence": 493,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:51:05.684Z"
+    },
+    {
+      "sequence": 492,
+      "event": "switched visualizer to Force Topology",
+      "timestamp": "2026-09-23T04:51:04.166Z"
+    },
+    {
+      "sequence": 491,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:51:02.750Z"
+    },
+    {
+      "sequence": 490,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:50:59.934Z"
+    },
+    {
+      "sequence": 489,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:50:59.275Z"
+    },
+    {
+      "sequence": 488,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:57.683Z"
+    },
+    {
+      "sequence": 487,
+      "event": "timeline scrubber set to 2026-08-29",
+      "timestamp": "2026-09-23T04:50:56.504Z"
+    },
+    {
+      "sequence": 486,
+      "event": "timeline scrubber set to 2026-04-27",
+      "timestamp": "2026-09-23T04:50:56.479Z"
+    },
+    {
+      "sequence": 485,
+      "event": "timeline scrubber set to 2025-10-27",
+      "timestamp": "2026-09-23T04:50:56.463Z"
+    },
+    {
+      "sequence": 484,
+      "event": "timeline scrubber set to 2025-05-20",
+      "timestamp": "2026-09-23T04:50:56.446Z"
+    },
+    {
+      "sequence": 483,
+      "event": "timeline scrubber set to 2025-02-07",
+      "timestamp": "2026-09-23T04:50:56.437Z"
+    },
+    {
+      "sequence": 482,
+      "event": "timeline scrubber set to 2024-11-30",
+      "timestamp": "2026-09-23T04:50:56.429Z"
+    },
+    {
+      "sequence": 481,
+      "event": "timeline scrubber set to 2024-10-03",
+      "timestamp": "2026-09-23T04:50:56.421Z"
+    },
+    {
+      "sequence": 480,
+      "event": "timeline scrubber set to 2024-09-01",
+      "timestamp": "2026-09-23T04:50:56.046Z"
+    },
+    {
+      "sequence": 479,
+      "event": "timeline scrubber set to 2024-09-30",
+      "timestamp": "2026-09-23T04:50:56.029Z"
+    },
+    {
+      "sequence": 478,
+      "event": "timeline scrubber set to 2024-11-16",
+      "timestamp": "2026-09-23T04:50:56.012Z"
+    },
+    {
+      "sequence": 477,
+      "event": "timeline scrubber set to 2025-01-06",
+      "timestamp": "2026-09-23T04:50:55.996Z"
+    },
+    {
+      "sequence": 476,
+      "event": "timeline scrubber set to 2025-03-01",
+      "timestamp": "2026-09-23T04:50:55.979Z"
+    },
+    {
+      "sequence": 475,
+      "event": "timeline scrubber set to 2025-04-21",
+      "timestamp": "2026-09-23T04:50:55.962Z"
+    },
+    {
+      "sequence": 474,
+      "event": "timeline scrubber set to 2025-05-31",
+      "timestamp": "2026-09-23T04:50:55.954Z"
+    },
+    {
+      "sequence": 473,
+      "event": "timeline scrubber set to 2025-06-26",
+      "timestamp": "2026-09-23T04:50:55.945Z"
+    },
+    {
+      "sequence": 472,
+      "event": "timeline scrubber set to 2025-08-05",
+      "timestamp": "2026-09-23T04:50:55.937Z"
+    },
+    {
+      "sequence": 471,
+      "event": "timeline scrubber set to 2025-09-14",
+      "timestamp": "2026-09-23T04:50:55.929Z"
+    },
+    {
+      "sequence": 470,
+      "event": "timeline scrubber set to 2025-10-09",
+      "timestamp": "2026-09-23T04:50:55.920Z"
+    },
+    {
+      "sequence": 469,
+      "event": "timeline scrubber set to 2025-11-18",
+      "timestamp": "2026-09-23T04:50:55.912Z"
+    },
+    {
+      "sequence": 468,
+      "event": "timeline scrubber set to 2025-12-24",
+      "timestamp": "2026-09-23T04:50:55.904Z"
+    },
+    {
+      "sequence": 467,
+      "event": "timeline scrubber set to 2026-02-10",
+      "timestamp": "2026-09-23T04:50:55.896Z"
+    },
+    {
+      "sequence": 466,
+      "event": "timeline scrubber set to 2026-04-16",
+      "timestamp": "2026-09-23T04:50:55.879Z"
+    },
+    {
+      "sequence": 465,
+      "event": "timeline scrubber set to 2026-06-10",
+      "timestamp": "2026-09-23T04:50:55.863Z"
+    },
+    {
+      "sequence": 464,
+      "event": "timeline scrubber set to 2026-07-16",
+      "timestamp": "2026-09-23T04:50:55.846Z"
+    },
+    {
+      "sequence": 463,
+      "event": "timeline scrubber set to 2026-07-27",
+      "timestamp": "2026-09-23T04:50:55.728Z"
+    },
+    {
+      "sequence": 462,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:50:48.225Z"
+    },
+    {
+      "sequence": 461,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:46.770Z"
+    },
+    {
+      "sequence": 460,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:39.108Z"
+    },
+    {
+      "sequence": 459,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:50:37.163Z"
+    },
+    {
+      "sequence": 458,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:50:36.554Z"
+    },
+    {
+      "sequence": 457,
+      "event": "opened corporate intelligence graph: splc-cust-2",
+      "timestamp": "2026-09-23T04:50:35.990Z"
+    },
+    {
+      "sequence": 456,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:50:33.223Z"
+    },
+    {
+      "sequence": 455,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:50:32.542Z"
+    },
+    {
+      "sequence": 454,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:50:31.954Z"
+    },
+    {
+      "sequence": 453,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:50:30.940Z"
+    },
+    {
+      "sequence": 452,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:50:27.593Z"
+    },
+    {
+      "sequence": 451,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:50:26.367Z"
+    },
+    {
+      "sequence": 450,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:25.106Z"
+    },
+    {
+      "sequence": 449,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:24.851Z"
+    },
+    {
+      "sequence": 448,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:50:24.415Z"
+    },
+    {
+      "sequence": 447,
+      "event": "opened corporate intelligence graph: splc-cust-1",
+      "timestamp": "2026-09-23T04:50:23.353Z"
+    },
+    {
+      "sequence": 446,
+      "event": "opened corporate intelligence graph: splc-cust-2",
+      "timestamp": "2026-09-23T04:50:22.540Z"
+    },
+    {
+      "sequence": 445,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:50:20.145Z"
+    },
+    {
+      "sequence": 444,
+      "event": "inspected entity NORD-EE",
+      "timestamp": "2026-09-23T04:50:06.010Z"
+    },
+    {
+      "sequence": 443,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:49:59.721Z"
+    },
+    {
+      "sequence": 442,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:49:58.988Z"
+    },
+    {
+      "sequence": 441,
+      "event": "selected route node: JIO-IN",
+      "timestamp": "2026-09-23T04:49:57.067Z"
+    },
+    {
+      "sequence": 440,
+      "event": "selected route node: BLACKROCK-US",
+      "timestamp": "2026-09-23T04:49:56.627Z"
+    },
+    {
+      "sequence": 439,
+      "event": "selected route node: HARBOR-AE",
+      "timestamp": "2026-09-23T04:49:36.710Z"
+    },
+    {
+      "sequence": 438,
+      "event": "selected route node: JPM-US",
+      "timestamp": "2026-09-23T04:49:30.392Z"
+    },
+    {
+      "sequence": 437,
+      "event": "selected route node: DB-DE",
+      "timestamp": "2026-09-23T04:49:29.667Z"
+    },
+    {
+      "sequence": 436,
+      "event": "selected route node: NORD-EE",
+      "timestamp": "2026-09-23T04:49:29.133Z"
+    },
+    {
+      "sequence": 435,
+      "event": "selected route node: HARBOR-AE",
+      "timestamp": "2026-09-23T04:49:28.384Z"
+    },
+    {
+      "sequence": 434,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:49:25.426Z"
+    },
+    {
+      "sequence": 433,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T04:49:24.898Z"
+    },
+    {
+      "sequence": 432,
+      "event": "executed template search: Find circular transactions in last 30 days",
+      "timestamp": "2026-09-23T04:49:24.881Z"
+    },
+    {
+      "sequence": 431,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:49:20.728Z"
+    },
+    {
+      "sequence": 430,
+      "event": "opened corporate intelligence graph: splc-cust-1",
+      "timestamp": "2026-09-23T04:49:20.106Z"
+    },
+    {
+      "sequence": 429,
+      "event": "opened corporate intelligence graph: splc-cust-2",
+      "timestamp": "2026-09-23T04:49:19.140Z"
+    },
+    {
+      "sequence": 428,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:49:17.423Z"
+    },
+    {
+      "sequence": 427,
+      "event": "opened corporate intelligence graph: splc-cust-2",
+      "timestamp": "2026-09-23T04:49:16.700Z"
+    },
+    {
+      "sequence": 426,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:49:04.225Z"
+    },
+    {
+      "sequence": 425,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:49:02.885Z"
+    },
+    {
+      "sequence": 424,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:49:02.210Z"
+    },
+    {
+      "sequence": 423,
+      "event": "opened corporate intelligence graph: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:49:00.643Z"
+    },
+    {
+      "sequence": 422,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-cust-2-2-4-0",
+      "timestamp": "2026-09-23T04:48:59.892Z"
+    },
+    {
+      "sequence": 421,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-cust-2-2-4",
+      "timestamp": "2026-09-23T04:48:59.409Z"
+    },
+    {
+      "sequence": 420,
+      "event": "selected SPLC node: splc-sup-splc-cust-2-2",
+      "timestamp": "2026-09-23T04:48:58.817Z"
+    },
+    {
+      "sequence": 419,
+      "event": "selected SPLC node: splc-cust-2",
+      "timestamp": "2026-09-23T04:48:57.742Z"
+    },
+    {
+      "sequence": 418,
+      "event": "opened corporate intelligence graph: splc-cust-2",
+      "timestamp": "2026-09-23T04:48:57.341Z"
+    },
+    {
+      "sequence": 417,
+      "event": "selected SPLC node: splc-cust-2",
+      "timestamp": "2026-09-23T04:48:57.284Z"
+    },
+    {
+      "sequence": 416,
+      "event": "selected SPLC node: splc-cust-2",
+      "timestamp": "2026-09-23T04:48:57.109Z"
+    },
+    {
+      "sequence": 415,
+      "event": "opened corporate intelligence graph: splc-cust-1",
+      "timestamp": "2026-09-23T04:48:56.808Z"
+    },
+    {
+      "sequence": 414,
+      "event": "selected SPLC node: splc-cust-1",
+      "timestamp": "2026-09-23T04:48:56.777Z"
+    },
+    {
+      "sequence": 413,
+      "event": "selected SPLC node: splc-cust-1",
+      "timestamp": "2026-09-23T04:48:56.610Z"
+    },
+    {
+      "sequence": 412,
+      "event": "selected SPLC node: splc-cust-1",
+      "timestamp": "2026-09-23T04:48:55.877Z"
+    },
+    {
+      "sequence": 411,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-sup-splc-sup-splc-sup-Invesco Perpetual-2-0-4-4-2-2",
+      "timestamp": "2026-09-23T04:46:28.692Z"
+    },
+    {
+      "sequence": 410,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-sup-splc-sup-Invesco Perpetual-2-0-4-4-2",
+      "timestamp": "2026-09-23T04:46:28.499Z"
+    },
+    {
+      "sequence": 409,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-splc-sup-Invesco Perpetual-2-0-4-4",
+      "timestamp": "2026-09-23T04:46:28.125Z"
+    },
+    {
+      "sequence": 408,
+      "event": "selected SPLC node: splc-sup-splc-sup-splc-sup-Invesco Perpetual-2-0-4",
+      "timestamp": "2026-09-23T04:46:27.741Z"
+    },
+    {
+      "sequence": 407,
+      "event": "selected SPLC node: splc-sup-splc-sup-Invesco Perpetual-2-0",
+      "timestamp": "2026-09-23T04:46:27.191Z"
+    },
+    {
+      "sequence": 406,
+      "event": "selected SPLC node: splc-sup-Invesco Perpetual-2",
+      "timestamp": "2026-09-23T04:46:22.192Z"
+    },
+    {
+      "sequence": 405,
+      "event": "selected SPLC node: Invesco Perpetual",
+      "timestamp": "2026-09-23T04:46:20.292Z"
+    },
+    {
+      "sequence": 404,
+      "event": "selected SPLC node: Invesco Perpetual",
+      "timestamp": "2026-09-23T04:46:19.527Z"
+    },
+    {
+      "sequence": 403,
+      "event": "selected SPLC node: Invesco Perpetual",
+      "timestamp": "2026-09-23T04:46:19.368Z"
+    },
+    {
+      "sequence": 402,
+      "event": "selected SPLC node: Invesco Perpetual",
+      "timestamp": "2026-09-23T04:46:18.841Z"
+    },
+    {
+      "sequence": 401,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:46:15.692Z"
+    },
+    {
+      "sequence": 400,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:46:10.341Z"
+    },
+    {
+      "sequence": 399,
+      "event": "selected MAP node: Invesco Perpetual",
+      "timestamp": "2026-09-23T04:46:08.575Z"
+    },
+    {
+      "sequence": 398,
+      "event": "selected MAP node: wikidata_Q312",
+      "timestamp": "2026-09-23T04:46:08.017Z"
+    },
+    {
+      "sequence": 397,
+      "event": "selected MAP node: wikidata_Q312",
+      "timestamp": "2026-09-23T04:46:07.559Z"
+    },
+    {
+      "sequence": 396,
+      "event": "selected MAP node: wikidata_Q312",
+      "timestamp": "2026-09-23T04:46:07.226Z"
+    },
+    {
+      "sequence": 395,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:46:02.216Z"
+    },
+    {
+      "sequence": 394,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:45:59.059Z"
+    },
+    {
+      "sequence": 393,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:41:50.259Z"
+    },
+    {
+      "sequence": 392,
+      "event": "switched visualizer to Connection Route Explorer",
+      "timestamp": "2026-09-23T04:41:49.081Z"
+    },
+    {
+      "sequence": 391,
+      "event": "switched visualizer to Bloomberg MAP / N219 Star Cluster",
+      "timestamp": "2026-09-23T04:41:48.040Z"
+    },
+    {
+      "sequence": 390,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:41:46.997Z"
+    },
+    {
+      "sequence": 389,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:41:45.192Z"
+    },
+    {
+      "sequence": 388,
+      "event": "switched visualizer to Force Topology",
+      "timestamp": "2026-09-23T04:41:39.573Z"
+    },
+    {
+      "sequence": 387,
+      "event": "opened corporate intelligence graph: Q312",
+      "timestamp": "2026-09-23T04:41:37.485Z"
+    },
+    {
+      "sequence": 386,
+      "event": "selected SPLC node: splc-sup-PEGATRON-TW-0",
+      "timestamp": "2026-09-23T04:41:23.668Z"
+    },
+    {
+      "sequence": 385,
+      "event": "selected SPLC node: PEGATRON-TW",
+      "timestamp": "2026-09-23T04:40:29.133Z"
+    },
+    {
+      "sequence": 384,
+      "event": "switched visualizer to Bloomberg SPLC Supply Chain Flow",
+      "timestamp": "2026-09-23T04:40:24.231Z"
+    },
+    {
+      "sequence": 383,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:40:21.737Z"
+    },
+    {
+      "sequence": 382,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T04:29:30.925Z"
+    },
+    {
+      "sequence": 381,
+      "event": "inspected entity BLACKROCK-US",
+      "timestamp": "2026-09-23T04:29:22.338Z"
+    },
+    {
+      "sequence": 380,
+      "event": "opened corporate intelligence graph: Q312",
+      "timestamp": "2026-09-23T03:48:59.392Z"
+    },
+    {
+      "sequence": 379,
+      "event": "executed template search: High-risk suppliers to tech companies",
+      "timestamp": "2026-09-23T03:48:59.380Z"
+    },
+    {
+      "sequence": 378,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T03:48:53.831Z"
+    },
+    {
+      "sequence": 377,
+      "event": "executed template search: Find circular transactions in last 30 days",
+      "timestamp": "2026-09-23T03:48:53.819Z"
+    },
+    {
+      "sequence": 376,
+      "event": "opened corporate intelligence graph: Q312",
+      "timestamp": "2026-09-23T03:48:52.777Z"
+    },
+    {
+      "sequence": 375,
+      "event": "executed template search: High-risk suppliers to tech companies",
+      "timestamp": "2026-09-23T03:48:52.761Z"
+    },
+    {
+      "sequence": 374,
+      "event": "opened corporate intelligence graph: HARBOR-AE",
+      "timestamp": "2026-09-23T03:48:52.103Z"
+    },
+    {
+      "sequence": 373,
+      "event": "executed template search: Find circular transactions in last 30 days",
+      "timestamp": "2026-09-23T03:48:52.093Z"
+    },
+    {
+      "sequence": 372,
+      "event": "opened corporate intelligence graph: Q312",
+      "timestamp": "2026-09-23T03:48:51.715Z"
+    },
+    {
+      "sequence": 371,
+      "event": "executed template search: Show subsidiaries of Apple",
+      "timestamp": "2026-09-23T03:48:51.702Z"
+    },
+    {
+      "sequence": 370,
+      "event": "opened corporate intelligence graph: Q312",
+      "timestamp": "2026-09-23T03:48:51.192Z"
+    },
+    {
+      "sequence": 369,
+      "event": "executed template search: Show subsidiaries of Apple",
+      "timestamp": "2026-09-23T03:48:51.179Z"
+    },
+    {
+      "sequence": 368,
+      "event": "opened corporate intelligence graph: BLACKROCK-US",
+      "timestamp": "2026-09-23T03:48:42.266Z"
+    },
+    {
+      "sequence": 367,
+      "event": "selected recommended company: BlackRock, Inc. (BLACKROCK-US)",
+      "timestamp": "2026-09-23T03:48:42.253Z"
+    },
+    {
+      "sequence": 366,
+      "event": "opened corporate intelligence graph: wikidata_Q366651",
+      "timestamp": "2026-09-23T03:48:31.994Z"
+    },
+    {
+      "sequence": 365,
+      "event": "selected recommended company: Audible, Inc. (wikidata_Q366651)",
+      "timestamp": "2026-09-23T03:48:31.977Z"
+    },
+    {
+      "sequence": 364,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:48:28.995Z"
+    },
+    {
+      "sequence": 363,
+      "event": "selected recommended company: Apple Inc. (wikidata_Q312)",
+      "timestamp": "2026-09-23T03:48:28.979Z"
+    },
+    {
+      "sequence": 362,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:48:27.038Z"
+    },
+    {
+      "sequence": 361,
+      "event": "selected recommended company: BlackRock, Inc. (BLACKROCK-US)",
+      "timestamp": "2026-09-23T03:40:33.985Z"
+    },
+    {
+      "sequence": 360,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:40:24.325Z"
+    },
+    {
+      "sequence": 359,
+      "event": "executed template search: High-risk suppliers to tech companies",
+      "timestamp": "2026-09-23T03:37:03.059Z"
+    },
+    {
+      "sequence": 358,
+      "event": "executed template search: Find circular transactions in last 30 days",
+      "timestamp": "2026-09-23T03:37:02.644Z"
+    },
+    {
+      "sequence": 357,
+      "event": "executed template search: Show subsidiaries of Apple",
+      "timestamp": "2026-09-23T03:37:01.785Z"
+    },
+    {
+      "sequence": 356,
+      "event": "opened corporate intelligence graph: wikidata_Q20800404",
+      "timestamp": "2026-09-23T03:36:41.527Z"
+    },
+    {
+      "sequence": 355,
+      "event": "saved investigation view",
+      "timestamp": "2026-09-23T03:36:33.163Z"
+    },
+    {
+      "sequence": 354,
+      "event": "timeline scrubber set to 2026-08-29",
+      "timestamp": "2026-09-23T03:36:17.755Z"
+    },
+    {
+      "sequence": 353,
+      "event": "timeline scrubber set to 2026-06-17",
+      "timestamp": "2026-09-23T03:36:17.747Z"
+    },
+    {
+      "sequence": 352,
+      "event": "timeline scrubber set to 2026-03-29",
+      "timestamp": "2026-09-23T03:36:17.739Z"
+    },
+    {
+      "sequence": 351,
+      "event": "timeline scrubber set to 2026-01-04",
+      "timestamp": "2026-09-23T03:36:17.731Z"
+    },
+    {
+      "sequence": 350,
+      "event": "timeline scrubber set to 2025-10-13",
+      "timestamp": "2026-09-23T03:36:17.722Z"
+    },
+    {
+      "sequence": 349,
+      "event": "timeline scrubber set to 2025-07-21",
+      "timestamp": "2026-09-23T03:36:17.714Z"
+    },
+    {
+      "sequence": 348,
+      "event": "timeline scrubber set to 2025-02-15",
+      "timestamp": "2026-09-23T03:36:17.697Z"
+    },
+    {
+      "sequence": 347,
+      "event": "timeline scrubber set to 2024-09-01",
+      "timestamp": "2026-09-23T03:36:17.331Z"
+    },
+    {
+      "sequence": 346,
+      "event": "timeline scrubber set to 2024-09-19",
+      "timestamp": "2026-09-23T03:36:17.314Z"
+    },
+    {
+      "sequence": 345,
+      "event": "timeline scrubber set to 2024-11-19",
+      "timestamp": "2026-09-23T03:36:17.297Z"
+    },
+    {
+      "sequence": 344,
+      "event": "timeline scrubber set to 2025-01-13",
+      "timestamp": "2026-09-23T03:36:17.281Z"
+    },
+    {
+      "sequence": 343,
+      "event": "timeline scrubber set to 2025-02-18",
+      "timestamp": "2026-09-23T03:36:17.272Z"
+    },
+    {
+      "sequence": 342,
+      "event": "timeline scrubber set to 2025-03-16",
+      "timestamp": "2026-09-23T03:36:17.264Z"
+    },
+    {
+      "sequence": 341,
+      "event": "timeline scrubber set to 2025-04-10",
+      "timestamp": "2026-09-23T03:36:17.255Z"
+    },
+    {
+      "sequence": 340,
+      "event": "timeline scrubber set to 2025-04-28",
+      "timestamp": "2026-09-23T03:36:17.247Z"
+    },
+    {
+      "sequence": 339,
+      "event": "timeline scrubber set to 2025-05-20",
+      "timestamp": "2026-09-23T03:36:17.239Z"
+    },
+    {
+      "sequence": 338,
+      "event": "timeline scrubber set to 2025-06-04",
+      "timestamp": "2026-09-23T03:36:17.231Z"
+    },
+    {
+      "sequence": 337,
+      "event": "timeline scrubber set to 2025-06-22",
+      "timestamp": "2026-09-23T03:36:17.222Z"
+    },
+    {
+      "sequence": 336,
+      "event": "timeline scrubber set to 2025-07-10",
+      "timestamp": "2026-09-23T03:36:17.214Z"
+    },
+    {
+      "sequence": 335,
+      "event": "timeline scrubber set to 2025-08-01",
+      "timestamp": "2026-09-23T03:36:17.197Z"
+    },
+    {
+      "sequence": 334,
+      "event": "timeline scrubber set to 2025-08-19",
+      "timestamp": "2026-09-23T03:36:17.181Z"
+    },
+    {
+      "sequence": 333,
+      "event": "timeline scrubber set to 2025-09-10",
+      "timestamp": "2026-09-23T03:36:17.164Z"
+    },
+    {
+      "sequence": 332,
+      "event": "timeline scrubber set to 2025-10-05",
+      "timestamp": "2026-09-23T03:36:17.147Z"
+    },
+    {
+      "sequence": 331,
+      "event": "timeline scrubber set to 2025-11-03",
+      "timestamp": "2026-09-23T03:36:17.131Z"
+    },
+    {
+      "sequence": 330,
+      "event": "timeline scrubber set to 2025-11-18",
+      "timestamp": "2026-09-23T03:36:17.121Z"
+    },
+    {
+      "sequence": 329,
+      "event": "timeline scrubber set to 2025-12-03",
+      "timestamp": "2026-09-23T03:36:17.114Z"
+    },
+    {
+      "sequence": 328,
+      "event": "timeline scrubber set to 2025-12-21",
+      "timestamp": "2026-09-23T03:36:17.106Z"
+    },
+    {
+      "sequence": 327,
+      "event": "timeline scrubber set to 2026-01-08",
+      "timestamp": "2026-09-23T03:36:17.097Z"
+    },
+    {
+      "sequence": 326,
+      "event": "timeline scrubber set to 2026-01-26",
+      "timestamp": "2026-09-23T03:36:17.089Z"
+    },
+    {
+      "sequence": 325,
+      "event": "timeline scrubber set to 2026-02-13",
+      "timestamp": "2026-09-23T03:36:17.080Z"
+    },
+    {
+      "sequence": 324,
+      "event": "timeline scrubber set to 2026-02-28",
+      "timestamp": "2026-09-23T03:36:17.072Z"
+    },
+    {
+      "sequence": 323,
+      "event": "timeline scrubber set to 2026-03-22",
+      "timestamp": "2026-09-23T03:36:17.064Z"
+    },
+    {
+      "sequence": 322,
+      "event": "timeline scrubber set to 2026-04-20",
+      "timestamp": "2026-09-23T03:36:17.047Z"
+    },
+    {
+      "sequence": 321,
+      "event": "timeline scrubber set to 2026-05-11",
+      "timestamp": "2026-09-23T03:36:17.031Z"
+    },
+    {
+      "sequence": 320,
+      "event": "timeline scrubber set to 2026-05-19",
+      "timestamp": "2026-09-23T03:36:17.015Z"
+    },
+    {
+      "sequence": 319,
+      "event": "timeline scrubber set to 2026-05-22",
+      "timestamp": "2026-09-23T03:36:16.818Z"
+    },
+    {
+      "sequence": 318,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:58.971Z"
+    },
+    {
+      "sequence": 317,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:57.036Z"
+    },
+    {
+      "sequence": 316,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:55.243Z"
+    },
+    {
+      "sequence": 315,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:52.162Z"
+    },
+    {
+      "sequence": 314,
+      "event": "executed template search: High-risk suppliers to tech companies",
+      "timestamp": "2026-09-23T03:35:43.159Z"
+    },
+    {
+      "sequence": 313,
+      "event": "executed template search: Find circular transactions in last 30 days",
+      "timestamp": "2026-09-23T03:35:42.519Z"
+    },
+    {
+      "sequence": 312,
+      "event": "executed template search: Show subsidiaries of Apple",
+      "timestamp": "2026-09-23T03:35:41.978Z"
+    },
+    {
+      "sequence": 311,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:37.567Z"
+    },
+    {
+      "sequence": 310,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:35:34.597Z"
+    },
+    {
+      "sequence": 309,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-23T03:31:33.486Z"
+    },
+    {
+      "sequence": 308,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-23T03:31:33.053Z"
+    },
+    {
+      "sequence": 307,
+      "event": "opened CASE-1829",
+      "timestamp": "2026-09-23T03:31:32.495Z"
+    },
+    {
+      "sequence": 306,
+      "event": "opened CASE-1842",
+      "timestamp": "2026-09-23T03:31:31.996Z"
+    },
+    {
+      "sequence": 305,
+      "event": "opened CASE-1837",
+      "timestamp": "2026-09-23T03:31:31.545Z"
+    },
+    {
+      "sequence": 304,
+      "event": "opened CASE-1829",
+      "timestamp": "2026-09-23T03:31:31.048Z"
+    },
+    {
+      "sequence": 303,
+      "event": "inspected entity NORD-EE",
+      "timestamp": "2026-09-23T03:31:01.596Z"
+    },
+    {
+      "sequence": 302,
+      "event": "saved investigation view",
+      "timestamp": "2026-09-23T03:30:53.631Z"
+    },
+    {
+      "sequence": 301,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:30:44.218Z"
+    },
+    {
+      "sequence": 300,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:29:38.070Z"
+    },
+    {
+      "sequence": 299,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:29:28.536Z"
+    },
+    {
+      "sequence": 298,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:27:11.538Z"
+    },
+    {
+      "sequence": 297,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T03:01:08.915Z"
+    },
+    {
+      "sequence": 296,
+      "event": "inspected entity NORD-EE",
+      "timestamp": "2026-09-23T03:01:01.705Z"
+    },
+    {
+      "sequence": 295,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:59:31.467Z"
+    },
+    {
+      "sequence": 294,
+      "event": "NORD-EE added to CASE-1842",
+      "timestamp": "2026-09-23T02:59:19.895Z"
+    },
+    {
+      "sequence": 293,
+      "event": "inspected entity NORD-EE",
+      "timestamp": "2026-09-23T02:59:16.878Z"
+    },
+    {
+      "sequence": 292,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:59:02.433Z"
+    },
+    {
+      "sequence": 291,
+      "event": "saved investigation view",
+      "timestamp": "2026-09-23T02:58:58.347Z"
+    },
+    {
+      "sequence": 290,
+      "event": "exported filtered CSV report",
+      "timestamp": "2026-09-23T02:58:55.128Z"
+    },
+    {
+      "sequence": 289,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:58:52.198Z"
+    },
+    {
+      "sequence": 288,
+      "event": "CASE-1842 status changed to Open",
+      "timestamp": "2026-09-23T02:58:42.360Z"
+    },
+    {
+      "sequence": 287,
+      "event": "CASE-1842 status changed to In review",
+      "timestamp": "2026-09-23T02:58:41.096Z"
+    },
+    {
+      "sequence": 286,
+      "event": "wikidata_Q312 watchlist status: removed",
+      "timestamp": "2026-09-23T02:58:23.571Z"
+    },
+    {
+      "sequence": 285,
+      "event": "wikidata_Q312 watchlist status: added",
+      "timestamp": "2026-09-23T02:58:22.328Z"
+    },
+    {
+      "sequence": 284,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:58:21.527Z"
+    },
+    {
+      "sequence": 283,
+      "event": "timeline scrubber set to 2026-08-29",
+      "timestamp": "2026-09-23T02:58:20.645Z"
+    },
+    {
+      "sequence": 282,
+      "event": "timeline scrubber set to (prevDate) => {\n\t\t\t\tconst nextTime = new Date(prevDate).getTime() + stepMs;\n\t\t\t\tif (nextTime >= endTimestamp) {\n\t\t\t\t\tsetIsPlaying(false);\n\t\t\t\t\treturn endDate;\n\t\t\t\t}\n\t\t\t\treturn new Date(nextTime).toISOString().split(\"T\")[0];\n\t\t\t}",
+      "timestamp": "2026-09-23T02:58:19.374Z"
+    },
+    {
+      "sequence": 281,
+      "event": "timeline scrubber set to (prevDate) => {\n\t\t\t\tconst nextTime = new Date(prevDate).getTime() + stepMs;\n\t\t\t\tif (nextTime >= endTimestamp) {\n\t\t\t\t\tsetIsPlaying(false);\n\t\t\t\t\treturn endDate;\n\t\t\t\t}\n\t\t\t\treturn new Date(nextTime).toISOString().split(\"T\")[0];\n\t\t\t}",
+      "timestamp": "2026-09-23T02:58:18.480Z"
+    },
+    {
+      "sequence": 280,
+      "event": "timeline scrubber set to 2026-08-29",
+      "timestamp": "2026-09-23T02:58:15.632Z"
+    },
+    {
+      "sequence": 279,
+      "event": "timeline scrubber set to 2026-08-25",
+      "timestamp": "2026-09-23T02:58:15.615Z"
+    },
+    {
+      "sequence": 278,
+      "event": "timeline scrubber set to 2026-08-03",
+      "timestamp": "2026-09-23T02:58:15.599Z"
+    },
+    {
+      "sequence": 277,
+      "event": "timeline scrubber set to 2026-07-09",
+      "timestamp": "2026-09-23T02:58:15.582Z"
+    },
+    {
+      "sequence": 276,
+      "event": "timeline scrubber set to 2026-05-30",
+      "timestamp": "2026-09-23T02:58:15.565Z"
+    },
+    {
+      "sequence": 275,
+      "event": "timeline scrubber set to 2026-04-05",
+      "timestamp": "2026-09-23T02:58:15.549Z"
+    },
+    {
+      "sequence": 274,
+      "event": "timeline scrubber set to 2026-02-10",
+      "timestamp": "2026-09-23T02:58:15.532Z"
+    },
+    {
+      "sequence": 273,
+      "event": "timeline scrubber set to 2026-01-08",
+      "timestamp": "2026-09-23T02:58:15.523Z"
+    },
+    {
+      "sequence": 272,
+      "event": "timeline scrubber set to 2025-12-10",
+      "timestamp": "2026-09-23T02:58:15.516Z"
+    },
+    {
+      "sequence": 271,
+      "event": "timeline scrubber set to 2025-11-07",
+      "timestamp": "2026-09-23T02:58:15.508Z"
+    },
+    {
+      "sequence": 270,
+      "event": "timeline scrubber set to 2025-10-13",
+      "timestamp": "2026-09-23T02:58:15.502Z"
+    },
+    {
+      "sequence": 269,
+      "event": "timeline scrubber set to 2025-09-17",
+      "timestamp": "2026-09-23T02:58:15.494Z"
+    },
+    {
+      "sequence": 268,
+      "event": "timeline scrubber set to 2025-09-03",
+      "timestamp": "2026-09-23T02:58:15.483Z"
+    },
+    {
+      "sequence": 267,
+      "event": "timeline scrubber set to 2025-08-23",
+      "timestamp": "2026-09-23T02:58:13.444Z"
+    },
+    {
+      "sequence": 266,
+      "event": "timeline scrubber set to 2025-08-23",
+      "timestamp": "2026-09-23T02:58:13.365Z"
+    },
+    {
+      "sequence": 265,
+      "event": "timeline scrubber set to 2025-08-26",
+      "timestamp": "2026-09-23T02:58:13.349Z"
+    },
+    {
+      "sequence": 264,
+      "event": "timeline scrubber set to 2025-08-30",
+      "timestamp": "2026-09-23T02:58:13.332Z"
+    },
+    {
+      "sequence": 263,
+      "event": "timeline scrubber set to 2025-09-06",
+      "timestamp": "2026-09-23T02:58:13.315Z"
+    },
+    {
+      "sequence": 262,
+      "event": "timeline scrubber set to 2025-09-14",
+      "timestamp": "2026-09-23T02:58:13.299Z"
+    },
+    {
+      "sequence": 261,
+      "event": "timeline scrubber set to 2025-09-21",
+      "timestamp": "2026-09-23T02:58:13.282Z"
+    },
+    {
+      "sequence": 260,
+      "event": "timeline scrubber set to 2025-10-02",
+      "timestamp": "2026-09-23T02:58:13.265Z"
+    },
+    {
+      "sequence": 259,
+      "event": "timeline scrubber set to 2025-10-16",
+      "timestamp": "2026-09-23T02:58:13.249Z"
+    },
+    {
+      "sequence": 258,
+      "event": "timeline scrubber set to 2025-10-27",
+      "timestamp": "2026-09-23T02:58:13.232Z"
+    },
+    {
+      "sequence": 257,
+      "event": "timeline scrubber set to 2025-11-03",
+      "timestamp": "2026-09-23T02:58:13.215Z"
+    },
+    {
+      "sequence": 256,
+      "event": "timeline scrubber set to 2025-11-11",
+      "timestamp": "2026-09-23T02:58:13.207Z"
+    },
+    {
+      "sequence": 255,
+      "event": "timeline scrubber set to 2025-11-14",
+      "timestamp": "2026-09-23T02:58:13.190Z"
+    },
+    {
+      "sequence": 254,
+      "event": "timeline scrubber set to 2025-11-18",
+      "timestamp": "2026-09-23T02:58:13.182Z"
+    },
+    {
+      "sequence": 253,
+      "event": "timeline scrubber set to 2025-11-22",
+      "timestamp": "2026-09-23T02:58:13.165Z"
+    },
+    {
+      "sequence": 252,
+      "event": "timeline scrubber set to 2025-11-25",
+      "timestamp": "2026-09-23T02:58:13.132Z"
+    },
+    {
+      "sequence": 251,
+      "event": "timeline scrubber set to 2025-11-29",
+      "timestamp": "2026-09-23T02:58:13.099Z"
+    },
+    {
+      "sequence": 250,
+      "event": "timeline scrubber set to 2025-12-03",
+      "timestamp": "2026-09-23T02:58:13.082Z"
+    },
+    {
+      "sequence": 249,
+      "event": "timeline scrubber set to 2025-12-06",
+      "timestamp": "2026-09-23T02:58:13.065Z"
+    },
+    {
+      "sequence": 248,
+      "event": "timeline scrubber set to 2025-12-10",
+      "timestamp": "2026-09-23T02:58:13.057Z"
+    },
+    {
+      "sequence": 247,
+      "event": "timeline scrubber set to 2025-12-13",
+      "timestamp": "2026-09-23T02:58:13.049Z"
+    },
+    {
+      "sequence": 246,
+      "event": "timeline scrubber set to 2025-12-17",
+      "timestamp": "2026-09-23T02:58:13.040Z"
+    },
+    {
+      "sequence": 245,
+      "event": "timeline scrubber set to 2025-12-21",
+      "timestamp": "2026-09-23T02:58:13.032Z"
+    },
+    {
+      "sequence": 244,
+      "event": "timeline scrubber set to 2025-12-24",
+      "timestamp": "2026-09-23T02:58:13.024Z"
+    },
+    {
+      "sequence": 243,
+      "event": "timeline scrubber set to 2025-12-28",
+      "timestamp": "2026-09-23T02:58:13.015Z"
+    },
+    {
+      "sequence": 242,
+      "event": "timeline scrubber set to 2026-01-01",
+      "timestamp": "2026-09-23T02:58:13.007Z"
+    },
+    {
+      "sequence": 241,
+      "event": "timeline scrubber set to 2026-01-08",
+      "timestamp": "2026-09-23T02:58:12.999Z"
+    },
+    {
+      "sequence": 240,
+      "event": "timeline scrubber set to 2026-01-15",
+      "timestamp": "2026-09-23T02:58:12.982Z"
+    },
+    {
+      "sequence": 239,
+      "event": "timeline scrubber set to 2026-01-22",
+      "timestamp": "2026-09-23T02:58:12.966Z"
+    },
+    {
+      "sequence": 238,
+      "event": "timeline scrubber set to 2026-02-02",
+      "timestamp": "2026-09-23T02:58:12.949Z"
+    },
+    {
+      "sequence": 237,
+      "event": "timeline scrubber set to 2026-02-10",
+      "timestamp": "2026-09-23T02:58:12.932Z"
+    },
+    {
+      "sequence": 236,
+      "event": "timeline scrubber set to 2026-02-20",
+      "timestamp": "2026-09-23T02:58:12.916Z"
+    },
+    {
+      "sequence": 235,
+      "event": "timeline scrubber set to 2026-02-28",
+      "timestamp": "2026-09-23T02:58:12.899Z"
+    },
+    {
+      "sequence": 234,
+      "event": "timeline scrubber set to 2026-03-07",
+      "timestamp": "2026-09-23T02:58:12.890Z"
+    },
+    {
+      "sequence": 233,
+      "event": "timeline scrubber set to 2026-03-11",
+      "timestamp": "2026-09-23T02:58:12.882Z"
+    },
+    {
+      "sequence": 232,
+      "event": "timeline scrubber set to 2026-03-18",
+      "timestamp": "2026-09-23T02:58:12.874Z"
+    },
+    {
+      "sequence": 231,
+      "event": "timeline scrubber set to 2026-03-22",
+      "timestamp": "2026-09-23T02:58:12.866Z"
+    },
+    {
+      "sequence": 230,
+      "event": "timeline scrubber set to 2026-03-29",
+      "timestamp": "2026-09-23T02:58:12.857Z"
+    },
+    {
+      "sequence": 229,
+      "event": "timeline scrubber set to 2026-04-01",
+      "timestamp": "2026-09-23T02:58:12.849Z"
+    },
+    {
+      "sequence": 228,
+      "event": "timeline scrubber set to 2026-04-09",
+      "timestamp": "2026-09-23T02:58:12.840Z"
+    },
+    {
+      "sequence": 227,
+      "event": "timeline scrubber set to 2026-04-12",
+      "timestamp": "2026-09-23T02:58:12.832Z"
+    },
+    {
+      "sequence": 226,
+      "event": "timeline scrubber set to 2026-04-23",
+      "timestamp": "2026-09-23T02:58:12.816Z"
+    },
+    {
+      "sequence": 225,
+      "event": "timeline scrubber set to 2026-05-01",
+      "timestamp": "2026-09-23T02:58:12.799Z"
+    },
+    {
+      "sequence": 224,
+      "event": "timeline scrubber set to 2026-05-08",
+      "timestamp": "2026-09-23T02:58:12.782Z"
+    },
+    {
+      "sequence": 223,
+      "event": "timeline scrubber set to 2026-05-19",
+      "timestamp": "2026-09-23T02:58:12.765Z"
+    },
+    {
+      "sequence": 222,
+      "event": "timeline scrubber set to 2026-05-30",
+      "timestamp": "2026-09-23T02:58:12.749Z"
+    },
+    {
+      "sequence": 221,
+      "event": "timeline scrubber set to 2026-06-13",
+      "timestamp": "2026-09-23T02:58:12.732Z"
+    },
+    {
+      "sequence": 220,
+      "event": "timeline scrubber set to 2026-06-24",
+      "timestamp": "2026-09-23T02:58:12.724Z"
+    },
+    {
+      "sequence": 219,
+      "event": "timeline scrubber set to 2026-07-01",
+      "timestamp": "2026-09-23T02:58:12.716Z"
+    },
+    {
+      "sequence": 218,
+      "event": "timeline scrubber set to 2026-07-12",
+      "timestamp": "2026-09-23T02:58:12.707Z"
+    },
+    {
+      "sequence": 217,
+      "event": "timeline scrubber set to 2026-07-20",
+      "timestamp": "2026-09-23T02:58:12.699Z"
+    },
+    {
+      "sequence": 216,
+      "event": "timeline scrubber set to 2026-07-27",
+      "timestamp": "2026-09-23T02:58:12.687Z"
+    },
+    {
+      "sequence": 215,
+      "event": "timeline scrubber set to 2026-08-14",
+      "timestamp": "2026-09-23T02:58:12.677Z"
+    },
+    {
+      "sequence": 214,
+      "event": "timeline scrubber set to 2026-08-18",
+      "timestamp": "2026-09-23T02:58:12.667Z"
+    },
+    {
+      "sequence": 213,
+      "event": "timeline scrubber set to 2026-08-25",
+      "timestamp": "2026-09-23T02:58:12.544Z"
+    },
+    {
+      "sequence": 212,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:58:05.283Z"
+    },
+    {
+      "sequence": 211,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:58:03.084Z"
+    },
+    {
+      "sequence": 210,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:57:55.928Z"
+    },
+    {
+      "sequence": 209,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:57:47.561Z"
+    },
+    {
+      "sequence": 208,
+      "event": "opened corporate intelligence graph: wikidata_Q312",
+      "timestamp": "2026-09-23T02:57:37.132Z"
+    },
     {
       "sequence": 207,
       "event": "alert triaged: TX-2026-08494",
@@ -8472,6 +9973,1536 @@
       "hash": "9663a1724215395513359d957e716b5aff839677507e3df26d24edb4f8e4240e",
       "sequence": 348,
       "serverTimestamp": "2026-09-01T18:47:37.435Z"
+    },
+    {
+      "id": "LOG-ORD-1790132891821-23ell",
+      "timestamp": "2026-09-23T03:08:11.821Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "9663a1724215395513359d957e716b5aff839677507e3df26d24edb4f8e4240e",
+      "hash": "d589d30966bb55b9a9797da73ed7b0b13d29f4f6c6ff58ebffcb3d8b447cc506",
+      "sequence": 349,
+      "serverTimestamp": "2026-09-23T03:08:11.857Z"
+    },
+    {
+      "id": "LOG-ORD-1790132891863-500r4",
+      "timestamp": "2026-09-23T03:08:11.863Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "d589d30966bb55b9a9797da73ed7b0b13d29f4f6c6ff58ebffcb3d8b447cc506",
+      "hash": "fa47e2445690b6c0231b1233b397a35055e5d1627731cf2d5b7361a433163e37",
+      "sequence": 350,
+      "serverTimestamp": "2026-09-23T03:08:11.865Z"
+    },
+    {
+      "id": "LOG-GRD-1790132891867-hbihv",
+      "timestamp": "2026-09-23T03:08:11.867Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "fa47e2445690b6c0231b1233b397a35055e5d1627731cf2d5b7361a433163e37",
+      "hash": "b64f0d8cb9ebd684f18982633961c54e9185a74e8119d215389c8da4f106e3b4",
+      "sequence": 351,
+      "serverTimestamp": "2026-09-23T03:08:11.868Z"
+    },
+    {
+      "id": "LOG-ORD-1790132891871-zfl61",
+      "timestamp": "2026-09-23T03:08:11.871Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "b64f0d8cb9ebd684f18982633961c54e9185a74e8119d215389c8da4f106e3b4",
+      "hash": "b07aff11cfbddacada376c8024f68965d81b30d2b037753d8b4a2f001be6a1ce",
+      "sequence": 352,
+      "serverTimestamp": "2026-09-23T03:08:11.873Z"
+    },
+    {
+      "id": "LOG-ORD-1790132891875-9ra54",
+      "timestamp": "2026-09-23T03:08:11.875Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "b07aff11cfbddacada376c8024f68965d81b30d2b037753d8b4a2f001be6a1ce",
+      "hash": "80a283ccddf858430d90050a56f9fbdf9ff312ce8b1cd8c0581d07e277136ae2",
+      "sequence": 353,
+      "serverTimestamp": "2026-09-23T03:08:11.876Z"
+    },
+    {
+      "id": "LOG-ORD-1790132891977-nqnzg",
+      "timestamp": "2026-09-23T03:08:11.977Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "80a283ccddf858430d90050a56f9fbdf9ff312ce8b1cd8c0581d07e277136ae2",
+      "hash": "db0095d2779e7a981f1799ed8bb4d7370ed65f0fc3004753812e3b32677fc6a2",
+      "sequence": 354,
+      "serverTimestamp": "2026-09-23T03:08:12.007Z"
+    },
+    {
+      "id": "LOG-ORD-1790132892368-sd2po",
+      "timestamp": "2026-09-23T03:08:12.368Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "db0095d2779e7a981f1799ed8bb4d7370ed65f0fc3004753812e3b32677fc6a2",
+      "hash": "3b54706685643bc6f1a09daeb744f0b113360a32a897e82c37b53646f085032c",
+      "sequence": 355,
+      "serverTimestamp": "2026-09-23T03:08:12.403Z"
+    },
+    {
+      "id": "LOG-GRD-1790132892407-yxhqv",
+      "timestamp": "2026-09-23T03:08:12.407Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "3b54706685643bc6f1a09daeb744f0b113360a32a897e82c37b53646f085032c",
+      "hash": "83d84d300ab4a58da1ebb098dbf75414a4e75b475ae1946876a0342531f1bdf4",
+      "sequence": 356,
+      "serverTimestamp": "2026-09-23T03:08:12.409Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743392-jzi1u",
+      "timestamp": "2026-09-23T03:22:23.392Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "83d84d300ab4a58da1ebb098dbf75414a4e75b475ae1946876a0342531f1bdf4",
+      "hash": "63bff9b69273d7fb7390f766914f0f0d326cda84ce4c8c7fe9ed6c17168c913e",
+      "sequence": 357,
+      "serverTimestamp": "2026-09-23T03:22:23.434Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743442-snukx",
+      "timestamp": "2026-09-23T03:22:23.442Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "63bff9b69273d7fb7390f766914f0f0d326cda84ce4c8c7fe9ed6c17168c913e",
+      "hash": "94197add0230f71f196f062cccdcd1da353f97e7fbe571e552bace5174ab552c",
+      "sequence": 358,
+      "serverTimestamp": "2026-09-23T03:22:23.444Z"
+    },
+    {
+      "id": "LOG-GRD-1790133743447-m22pz",
+      "timestamp": "2026-09-23T03:22:23.447Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "94197add0230f71f196f062cccdcd1da353f97e7fbe571e552bace5174ab552c",
+      "hash": "42f77770c961ee8e9b1389990437cde27c8d40318871565b062415a935422bc5",
+      "sequence": 359,
+      "serverTimestamp": "2026-09-23T03:22:23.450Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743454-v7565",
+      "timestamp": "2026-09-23T03:22:23.454Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "42f77770c961ee8e9b1389990437cde27c8d40318871565b062415a935422bc5",
+      "hash": "c4a4e0cfcd5b2e6daf3e8114ed455585dad80f84e87e5bdf182933e75abb4ac4",
+      "sequence": 360,
+      "serverTimestamp": "2026-09-23T03:22:23.457Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743460-to6em",
+      "timestamp": "2026-09-23T03:22:23.460Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "c4a4e0cfcd5b2e6daf3e8114ed455585dad80f84e87e5bdf182933e75abb4ac4",
+      "hash": "aa982ad8a585d2288bef0951da2f9e33a2aaa6bd376d50828b546afdbced3d7b",
+      "sequence": 361,
+      "serverTimestamp": "2026-09-23T03:22:23.465Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743595-d5qp7",
+      "timestamp": "2026-09-23T03:22:23.595Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "aa982ad8a585d2288bef0951da2f9e33a2aaa6bd376d50828b546afdbced3d7b",
+      "hash": "ef4e6d5490fe2e624a96b92833dd5edec65377c0d51cf5159968f211d1d1fd9d",
+      "sequence": 362,
+      "serverTimestamp": "2026-09-23T03:22:23.630Z"
+    },
+    {
+      "id": "LOG-ORD-1790133743932-bql6f",
+      "timestamp": "2026-09-23T03:22:23.932Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "ef4e6d5490fe2e624a96b92833dd5edec65377c0d51cf5159968f211d1d1fd9d",
+      "hash": "79f20587878593740621468acce4ef8c8b98fed5fecacd97c1b8b7a70fa48f98",
+      "sequence": 363,
+      "serverTimestamp": "2026-09-23T03:22:23.968Z"
+    },
+    {
+      "id": "LOG-GRD-1790133743973-espl8",
+      "timestamp": "2026-09-23T03:22:23.973Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "79f20587878593740621468acce4ef8c8b98fed5fecacd97c1b8b7a70fa48f98",
+      "hash": "024278042530d9d630c8656be5168cb04c99fbf28c2b708fdf8e4a26ab1e6785",
+      "sequence": 364,
+      "serverTimestamp": "2026-09-23T03:22:23.974Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439271-uo86m",
+      "timestamp": "2026-09-23T03:33:59.271Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "024278042530d9d630c8656be5168cb04c99fbf28c2b708fdf8e4a26ab1e6785",
+      "hash": "23e2c96f88f3c781a9ee745201bc2ff15a778d9540ff87e5f54f768a0c002be1",
+      "sequence": 365,
+      "serverTimestamp": "2026-09-23T03:33:59.330Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439336-2imf8",
+      "timestamp": "2026-09-23T03:33:59.336Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "23e2c96f88f3c781a9ee745201bc2ff15a778d9540ff87e5f54f768a0c002be1",
+      "hash": "fd0551b9f4e27ae47587a34150544f560874d316aa9d776aa5f97d4060b8a2f5",
+      "sequence": 366,
+      "serverTimestamp": "2026-09-23T03:33:59.338Z"
+    },
+    {
+      "id": "LOG-GRD-1790134439340-ziogq",
+      "timestamp": "2026-09-23T03:33:59.340Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "fd0551b9f4e27ae47587a34150544f560874d316aa9d776aa5f97d4060b8a2f5",
+      "hash": "272fbd6128321963f40882ed4874b3260185bde79e3b4326fdb91368113f95c9",
+      "sequence": 367,
+      "serverTimestamp": "2026-09-23T03:33:59.342Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439346-xllxq",
+      "timestamp": "2026-09-23T03:33:59.346Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "272fbd6128321963f40882ed4874b3260185bde79e3b4326fdb91368113f95c9",
+      "hash": "2ea245b0a8f5e73e6f8344b58a93291ca3cf1d1091b8dc35e6f3885c98370c71",
+      "sequence": 368,
+      "serverTimestamp": "2026-09-23T03:33:59.348Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439350-lae6x",
+      "timestamp": "2026-09-23T03:33:59.350Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "2ea245b0a8f5e73e6f8344b58a93291ca3cf1d1091b8dc35e6f3885c98370c71",
+      "hash": "026bf530a8bb26a414095430b790bc903bd64905faaa5c9c76b80df030547457",
+      "sequence": 369,
+      "serverTimestamp": "2026-09-23T03:33:59.351Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439451-ubpgi",
+      "timestamp": "2026-09-23T03:33:59.451Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "026bf530a8bb26a414095430b790bc903bd64905faaa5c9c76b80df030547457",
+      "hash": "9249e4c6950cad25c3f072e7789f6011c65b8180c302e87e8625b860fd71e4a5",
+      "sequence": 370,
+      "serverTimestamp": "2026-09-23T03:33:59.482Z"
+    },
+    {
+      "id": "LOG-ORD-1790134439815-l0j06",
+      "timestamp": "2026-09-23T03:33:59.815Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "9249e4c6950cad25c3f072e7789f6011c65b8180c302e87e8625b860fd71e4a5",
+      "hash": "937e6b7652c6a585aa406ff95eef3a5a4b898eefa6d48902e6ff857efe0eca25",
+      "sequence": 371,
+      "serverTimestamp": "2026-09-23T03:33:59.843Z"
+    },
+    {
+      "id": "LOG-GRD-1790134439848-maq1s",
+      "timestamp": "2026-09-23T03:33:59.848Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "937e6b7652c6a585aa406ff95eef3a5a4b898eefa6d48902e6ff857efe0eca25",
+      "hash": "18f6d2747546125a0ee8d112b00b124897df0b4fbe4c7a5fda87c29bd68a4721",
+      "sequence": 372,
+      "serverTimestamp": "2026-09-23T03:33:59.849Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779422-29cc4",
+      "timestamp": "2026-09-23T03:39:39.422Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "18f6d2747546125a0ee8d112b00b124897df0b4fbe4c7a5fda87c29bd68a4721",
+      "hash": "71bf365b608e39fbb87102fde775d3db071e08f619ccd7deb6c47d6e1dcf7da4",
+      "sequence": 373,
+      "serverTimestamp": "2026-09-23T03:39:39.484Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779489-ya99g",
+      "timestamp": "2026-09-23T03:39:39.489Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "71bf365b608e39fbb87102fde775d3db071e08f619ccd7deb6c47d6e1dcf7da4",
+      "hash": "b7dcbfb9c2f45594bcab06bb20a9084f2972d7b8074c9c13105b638b0b3c39f9",
+      "sequence": 374,
+      "serverTimestamp": "2026-09-23T03:39:39.491Z"
+    },
+    {
+      "id": "LOG-GRD-1790134779493-lzqn5",
+      "timestamp": "2026-09-23T03:39:39.493Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "b7dcbfb9c2f45594bcab06bb20a9084f2972d7b8074c9c13105b638b0b3c39f9",
+      "hash": "69f6c729d8e1f370e6ddea69888068989d8c6074a9598bbbeb9b585c95fb5763",
+      "sequence": 375,
+      "serverTimestamp": "2026-09-23T03:39:39.495Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779497-dvk3y",
+      "timestamp": "2026-09-23T03:39:39.497Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "69f6c729d8e1f370e6ddea69888068989d8c6074a9598bbbeb9b585c95fb5763",
+      "hash": "9a0b9d2d2ebabe29ffc05812436c6d766930b73ca15d96163fccabf28d9c12d9",
+      "sequence": 376,
+      "serverTimestamp": "2026-09-23T03:39:39.499Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779501-gw0y2",
+      "timestamp": "2026-09-23T03:39:39.501Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "9a0b9d2d2ebabe29ffc05812436c6d766930b73ca15d96163fccabf28d9c12d9",
+      "hash": "5a361a20f9b2a75a6e2c311354f600215300997b0b72c79364c17c5d05711d04",
+      "sequence": 377,
+      "serverTimestamp": "2026-09-23T03:39:39.502Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779606-03oua",
+      "timestamp": "2026-09-23T03:39:39.606Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "5a361a20f9b2a75a6e2c311354f600215300997b0b72c79364c17c5d05711d04",
+      "hash": "a03d9cd68e4bdc97e77c9ee797aa525b93867bac8de19b674bddba31c5d4f1de",
+      "sequence": 378,
+      "serverTimestamp": "2026-09-23T03:39:39.636Z"
+    },
+    {
+      "id": "LOG-ORD-1790134779975-q7395",
+      "timestamp": "2026-09-23T03:39:39.975Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "a03d9cd68e4bdc97e77c9ee797aa525b93867bac8de19b674bddba31c5d4f1de",
+      "hash": "90bd72b7f97ea0c4410e78e0cddc8549bc5c8c96a5a50fe8d0bcf404a56ff7a6",
+      "sequence": 379,
+      "serverTimestamp": "2026-09-23T03:39:40.004Z"
+    },
+    {
+      "id": "LOG-GRD-1790134780009-qbawl",
+      "timestamp": "2026-09-23T03:39:40.009Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "90bd72b7f97ea0c4410e78e0cddc8549bc5c8c96a5a50fe8d0bcf404a56ff7a6",
+      "hash": "5534f09cefd8e47c841f9c2b2e1b11db1150fdc8084266bed0839b0418813f3a",
+      "sequence": 380,
+      "serverTimestamp": "2026-09-23T03:39:40.010Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208351-fklmt",
+      "timestamp": "2026-09-23T03:46:48.351Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "5534f09cefd8e47c841f9c2b2e1b11db1150fdc8084266bed0839b0418813f3a",
+      "hash": "113a59322ec8518e6f8d57d3222ac57e8c0aeb49471c762d500913b7cd9c08bc",
+      "sequence": 381,
+      "serverTimestamp": "2026-09-23T03:46:48.409Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208415-fr5l2",
+      "timestamp": "2026-09-23T03:46:48.415Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "113a59322ec8518e6f8d57d3222ac57e8c0aeb49471c762d500913b7cd9c08bc",
+      "hash": "b182eff4b7faefcfbfb5f9640d94bf041c9cac39383b4ff0f4be2b410615730a",
+      "sequence": 382,
+      "serverTimestamp": "2026-09-23T03:46:48.417Z"
+    },
+    {
+      "id": "LOG-GRD-1790135208419-oynf7",
+      "timestamp": "2026-09-23T03:46:48.419Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "b182eff4b7faefcfbfb5f9640d94bf041c9cac39383b4ff0f4be2b410615730a",
+      "hash": "15b44a72fd9091baed6c3155b4204dac7c43af0743848d0c5db2cffdc4ab74f5",
+      "sequence": 383,
+      "serverTimestamp": "2026-09-23T03:46:48.421Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208424-ot1z3",
+      "timestamp": "2026-09-23T03:46:48.424Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "15b44a72fd9091baed6c3155b4204dac7c43af0743848d0c5db2cffdc4ab74f5",
+      "hash": "3f374b13049bbdf95253d45fdcc6279a5bff7a240801eb4b14c92735a0342898",
+      "sequence": 384,
+      "serverTimestamp": "2026-09-23T03:46:48.425Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208427-qij57",
+      "timestamp": "2026-09-23T03:46:48.427Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "3f374b13049bbdf95253d45fdcc6279a5bff7a240801eb4b14c92735a0342898",
+      "hash": "af3fed6124324bfee36feffefe4a9406a98f9e112d3fbf9db43368554e7baa86",
+      "sequence": 385,
+      "serverTimestamp": "2026-09-23T03:46:48.428Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208536-r7f21",
+      "timestamp": "2026-09-23T03:46:48.536Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "af3fed6124324bfee36feffefe4a9406a98f9e112d3fbf9db43368554e7baa86",
+      "hash": "5aac5f7a3674637d7fbb7137b3bb0daf0633b6b23d376a2f3884265f679e5304",
+      "sequence": 386,
+      "serverTimestamp": "2026-09-23T03:46:48.566Z"
+    },
+    {
+      "id": "LOG-ORD-1790135208895-rwmhl",
+      "timestamp": "2026-09-23T03:46:48.895Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "5aac5f7a3674637d7fbb7137b3bb0daf0633b6b23d376a2f3884265f679e5304",
+      "hash": "a3722ff3b5226fcc6f133522df995fa1846768826740ccc83359bd769a424796",
+      "sequence": 387,
+      "serverTimestamp": "2026-09-23T03:46:48.926Z"
+    },
+    {
+      "id": "LOG-GRD-1790135208931-w0ux1",
+      "timestamp": "2026-09-23T03:46:48.931Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "a3722ff3b5226fcc6f133522df995fa1846768826740ccc83359bd769a424796",
+      "hash": "cb2ff3cb5cdb34f24ddabb22a1c82a66f034dec29b30943ee9695fffecdd00f3",
+      "sequence": 388,
+      "serverTimestamp": "2026-09-23T03:46:48.932Z"
+    },
+    {
+      "id": "LOG-ORD-1790138193509-6aatr",
+      "timestamp": "2026-09-23T04:36:33.509Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "cb2ff3cb5cdb34f24ddabb22a1c82a66f034dec29b30943ee9695fffecdd00f3",
+      "hash": "5bb382e16e75cec4198f1ce57324b9b3fa000d71fc0734a7e3f57d08f39a5632",
+      "sequence": 389,
+      "serverTimestamp": "2026-09-23T04:36:33.543Z"
+    },
+    {
+      "id": "LOG-ORD-1790138193550-c56qy",
+      "timestamp": "2026-09-23T04:36:33.550Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "5bb382e16e75cec4198f1ce57324b9b3fa000d71fc0734a7e3f57d08f39a5632",
+      "hash": "37caffffb0d84acf7df7e1ccf6862c9d0e43de49484b60a6f9ee2adf96cd5823",
+      "sequence": 390,
+      "serverTimestamp": "2026-09-23T04:36:33.552Z"
+    },
+    {
+      "id": "LOG-GRD-1790138193555-pasv8",
+      "timestamp": "2026-09-23T04:36:33.555Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "37caffffb0d84acf7df7e1ccf6862c9d0e43de49484b60a6f9ee2adf96cd5823",
+      "hash": "ed27bd668948dc190205794d7bf4631a7c8b19ef1b6e71033de5766c5f13821c",
+      "sequence": 391,
+      "serverTimestamp": "2026-09-23T04:36:33.556Z"
+    },
+    {
+      "id": "LOG-ORD-1790138193559-pg1zf",
+      "timestamp": "2026-09-23T04:36:33.559Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "ed27bd668948dc190205794d7bf4631a7c8b19ef1b6e71033de5766c5f13821c",
+      "hash": "21bb7e8330c3113483ea1ba6a9739ca8dc9de2f05896f15d445a3b025d3786f7",
+      "sequence": 392,
+      "serverTimestamp": "2026-09-23T04:36:33.560Z"
+    },
+    {
+      "id": "LOG-ORD-1790138193562-zermc",
+      "timestamp": "2026-09-23T04:36:33.562Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "21bb7e8330c3113483ea1ba6a9739ca8dc9de2f05896f15d445a3b025d3786f7",
+      "hash": "4009560626661d6a90f478a781c50da1e699be7bb5c791e25534e6ce13b04169",
+      "sequence": 393,
+      "serverTimestamp": "2026-09-23T04:36:33.563Z"
+    },
+    {
+      "id": "LOG-ORD-1790138193666-77qvb",
+      "timestamp": "2026-09-23T04:36:33.666Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "4009560626661d6a90f478a781c50da1e699be7bb5c791e25534e6ce13b04169",
+      "hash": "71e475daf6d4527bf2c5bd688d1e2209db50f77fff7c4a64af48bf2c9d33852e",
+      "sequence": 394,
+      "serverTimestamp": "2026-09-23T04:36:33.695Z"
+    },
+    {
+      "id": "LOG-ORD-1790138194054-q3h6z",
+      "timestamp": "2026-09-23T04:36:34.054Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "71e475daf6d4527bf2c5bd688d1e2209db50f77fff7c4a64af48bf2c9d33852e",
+      "hash": "35cf994821dfc5c631cb53909565f0755a8672272a8b67223a4e15ab548daaf7",
+      "sequence": 395,
+      "serverTimestamp": "2026-09-23T04:36:34.087Z"
+    },
+    {
+      "id": "LOG-GRD-1790138194092-swph2",
+      "timestamp": "2026-09-23T04:36:34.092Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "35cf994821dfc5c631cb53909565f0755a8672272a8b67223a4e15ab548daaf7",
+      "hash": "7cdf1000592244b41058d8969605703f6b115a143125631a8deabc0a5022a41e",
+      "sequence": 396,
+      "serverTimestamp": "2026-09-23T04:36:34.093Z"
+    },
+    {
+      "id": "LOG-ORD-1790138353855-hq60g",
+      "timestamp": "2026-09-23T04:39:13.855Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "7cdf1000592244b41058d8969605703f6b115a143125631a8deabc0a5022a41e",
+      "hash": "3ced764cfdef477310a03bfb4c5002a4121ec45643d5ea05ea43541ccc344173",
+      "sequence": 397,
+      "serverTimestamp": "2026-09-23T04:39:13.893Z"
+    },
+    {
+      "id": "LOG-ORD-1790138353899-d2amt",
+      "timestamp": "2026-09-23T04:39:13.899Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "3ced764cfdef477310a03bfb4c5002a4121ec45643d5ea05ea43541ccc344173",
+      "hash": "08d91ba15bafc773f14cad88d7888aded53b41c47acc8cbce85ef79bce658b0f",
+      "sequence": 398,
+      "serverTimestamp": "2026-09-23T04:39:13.901Z"
+    },
+    {
+      "id": "LOG-GRD-1790138353904-ejjhs",
+      "timestamp": "2026-09-23T04:39:13.904Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "08d91ba15bafc773f14cad88d7888aded53b41c47acc8cbce85ef79bce658b0f",
+      "hash": "62146f907e4e8ca36bc509d26ec21d92df2232daa75aabbf7d8f56f70b10ce39",
+      "sequence": 399,
+      "serverTimestamp": "2026-09-23T04:39:13.905Z"
+    },
+    {
+      "id": "LOG-ORD-1790138353908-qlvy4",
+      "timestamp": "2026-09-23T04:39:13.908Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "62146f907e4e8ca36bc509d26ec21d92df2232daa75aabbf7d8f56f70b10ce39",
+      "hash": "b42d57596d93b3dc7b2447fd9e18aa6092b5dedfcebe0e4e7de61cabc07468d1",
+      "sequence": 400,
+      "serverTimestamp": "2026-09-23T04:39:13.910Z"
+    },
+    {
+      "id": "LOG-ORD-1790138353912-s987t",
+      "timestamp": "2026-09-23T04:39:13.912Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "b42d57596d93b3dc7b2447fd9e18aa6092b5dedfcebe0e4e7de61cabc07468d1",
+      "hash": "894e722468c602245823e316a18f083a459584d900e60a2cbc2715cc4ad4fb70",
+      "sequence": 401,
+      "serverTimestamp": "2026-09-23T04:39:13.913Z"
+    },
+    {
+      "id": "LOG-ORD-1790138354024-p352o",
+      "timestamp": "2026-09-23T04:39:14.024Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "894e722468c602245823e316a18f083a459584d900e60a2cbc2715cc4ad4fb70",
+      "hash": "7a2be6f152eb31dce5e815954cef60c7a9f7e306ad7a754564943d50c069ac6c",
+      "sequence": 402,
+      "serverTimestamp": "2026-09-23T04:39:14.057Z"
+    },
+    {
+      "id": "LOG-ORD-1790138354407-ng672",
+      "timestamp": "2026-09-23T04:39:14.407Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "7a2be6f152eb31dce5e815954cef60c7a9f7e306ad7a754564943d50c069ac6c",
+      "hash": "febdec2e3ba44b7d18f43da353040103777e88cbb5b474cc70370c249a57eee1",
+      "sequence": 403,
+      "serverTimestamp": "2026-09-23T04:39:14.439Z"
+    },
+    {
+      "id": "LOG-GRD-1790138354443-tj93u",
+      "timestamp": "2026-09-23T04:39:14.443Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "febdec2e3ba44b7d18f43da353040103777e88cbb5b474cc70370c249a57eee1",
+      "hash": "8153a599126fe4a2db386da2142d497b491d6d5d41158d64c315949d804fa8e3",
+      "sequence": 404,
+      "serverTimestamp": "2026-09-23T04:39:14.445Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682125-mywfk",
+      "timestamp": "2026-09-23T04:44:42.125Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "8153a599126fe4a2db386da2142d497b491d6d5d41158d64c315949d804fa8e3",
+      "hash": "f4a90befaba7bf86c8a800d06e7da01b24eeee605d7f6b4ca4a4f350886fb5fb",
+      "sequence": 405,
+      "serverTimestamp": "2026-09-23T04:44:42.183Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682191-pqekv",
+      "timestamp": "2026-09-23T04:44:42.191Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "f4a90befaba7bf86c8a800d06e7da01b24eeee605d7f6b4ca4a4f350886fb5fb",
+      "hash": "fdd7c13ee53cb58dc9569c98a81498d5c30b2b44ab2e61ba18b848bfbddb3635",
+      "sequence": 406,
+      "serverTimestamp": "2026-09-23T04:44:42.197Z"
+    },
+    {
+      "id": "LOG-GRD-1790138682201-vdal2",
+      "timestamp": "2026-09-23T04:44:42.201Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "fdd7c13ee53cb58dc9569c98a81498d5c30b2b44ab2e61ba18b848bfbddb3635",
+      "hash": "8dce02704225da9fc8ba436ea3c4cb918547ef2d2f656fd03d4747bfa0d1f079",
+      "sequence": 407,
+      "serverTimestamp": "2026-09-23T04:44:42.203Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682207-18m2a",
+      "timestamp": "2026-09-23T04:44:42.207Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "8dce02704225da9fc8ba436ea3c4cb918547ef2d2f656fd03d4747bfa0d1f079",
+      "hash": "d0e28358035ac59d273f8fb8d48c53033831935f5576f6bc6e1f1121af3a7d30",
+      "sequence": 408,
+      "serverTimestamp": "2026-09-23T04:44:42.212Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682217-mlb8q",
+      "timestamp": "2026-09-23T04:44:42.217Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "d0e28358035ac59d273f8fb8d48c53033831935f5576f6bc6e1f1121af3a7d30",
+      "hash": "d31f72bca88e6d7fbe08293e62fb8b0583dd67e7f89d112d0a4da380bb0f9405",
+      "sequence": 409,
+      "serverTimestamp": "2026-09-23T04:44:42.222Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682391-kfku5",
+      "timestamp": "2026-09-23T04:44:42.391Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "d31f72bca88e6d7fbe08293e62fb8b0583dd67e7f89d112d0a4da380bb0f9405",
+      "hash": "d5b3b37bb8553ddcd87f7ceceae22bdafd04ca645a8c52ec4aeb0fadb73c4b82",
+      "sequence": 410,
+      "serverTimestamp": "2026-09-23T04:44:42.434Z"
+    },
+    {
+      "id": "LOG-ORD-1790138682671-e2yfi",
+      "timestamp": "2026-09-23T04:44:42.671Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "d5b3b37bb8553ddcd87f7ceceae22bdafd04ca645a8c52ec4aeb0fadb73c4b82",
+      "hash": "f8c597ff81e235d05967b2b5493db70d4ab940cef9b1a581bc23283f1cb9d026",
+      "sequence": 411,
+      "serverTimestamp": "2026-09-23T04:44:42.702Z"
+    },
+    {
+      "id": "LOG-GRD-1790138682707-axqf7",
+      "timestamp": "2026-09-23T04:44:42.707Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "f8c597ff81e235d05967b2b5493db70d4ab940cef9b1a581bc23283f1cb9d026",
+      "hash": "8bae8462cb4e6b711b05d2f12ab6e5333ea47a707ec1cf8e04e6e5d104de5291",
+      "sequence": 412,
+      "serverTimestamp": "2026-09-23T04:44:42.708Z"
+    },
+    {
+      "id": "LOG-ORD-1790138929713-b83bl",
+      "timestamp": "2026-09-23T04:48:49.713Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "qty": 10000,
+      "notional": 10874,
+      "limitPrice": null,
+      "user": "TRADER-ALICE",
+      "guardrailsApproved": true,
+      "reason": "Long carry entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "8bae8462cb4e6b711b05d2f12ab6e5333ea47a707ec1cf8e04e6e5d104de5291",
+      "hash": "489201033c47e0fa6093d4ed94bbd3ac740a9c5e1b30f1e5bd745b12648ad9a9",
+      "sequence": 413,
+      "serverTimestamp": "2026-09-23T04:48:49.759Z"
+    },
+    {
+      "id": "LOG-ORD-1790138929766-cejhv",
+      "timestamp": "2026-09-23T04:48:49.766Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-002",
+      "symbol": "USD/JPY",
+      "side": "SELL",
+      "qty": 5000,
+      "notional": 72715,
+      "limitPrice": null,
+      "user": "TRADER-BOB",
+      "guardrailsApproved": true,
+      "reason": "Carry short entry",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "489201033c47e0fa6093d4ed94bbd3ac740a9c5e1b30f1e5bd745b12648ad9a9",
+      "hash": "10d30291ccf0fa5696a5ccd04901928ffd6ea8e510136e4a016bd65c2615a95b",
+      "sequence": 414,
+      "serverTimestamp": "2026-09-23T04:48:49.768Z"
+    },
+    {
+      "id": "LOG-GRD-1790138929771-xumno",
+      "timestamp": "2026-09-23T04:48:49.771Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "MAX_NOTIONAL",
+      "rejectedOrder": {
+        "symbol": "SPX",
+        "qty": 100,
+        "notional": 563400
+      },
+      "reason": "Exceeded order cap",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "10d30291ccf0fa5696a5ccd04901928ffd6ea8e510136e4a016bd65c2615a95b",
+      "hash": "9df333964d4cbec88a157c6e83051a47df056b7c2f3164c2ace4ab324c080f85",
+      "sequence": 415,
+      "serverTimestamp": "2026-09-23T04:48:49.776Z"
+    },
+    {
+      "id": "LOG-ORD-1790138929779-vsr2v",
+      "timestamp": "2026-09-23T04:48:49.779Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-1",
+      "symbol": "EUR/USD",
+      "qty": 1000,
+      "limitPrice": null,
+      "user": "ALICE",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "9df333964d4cbec88a157c6e83051a47df056b7c2f3164c2ace4ab324c080f85",
+      "hash": "60987b045642d9b8b57fbbe4218bd6092df512e02f2e9beaaea345d8c46450d4",
+      "sequence": 416,
+      "serverTimestamp": "2026-09-23T04:48:49.781Z"
+    },
+    {
+      "id": "LOG-ORD-1790138929784-82ek8",
+      "timestamp": "2026-09-23T04:48:49.784Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-2",
+      "symbol": "USD/JPY",
+      "qty": 2000,
+      "limitPrice": null,
+      "user": "BOB",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "60987b045642d9b8b57fbbe4218bd6092df512e02f2e9beaaea345d8c46450d4",
+      "hash": "2353d6b12e5cd6a91a47e8476b78c9d28abbad194548fcc0210ab563b715e54d",
+      "sequence": 417,
+      "serverTimestamp": "2026-09-23T04:48:49.785Z"
+    },
+    {
+      "id": "LOG-ORD-1790138929904-w8rk5",
+      "timestamp": "2026-09-23T04:48:49.904Z",
+      "event": "ORDER_SUBMITTED",
+      "symbol": "EUR/USD",
+      "side": "BUY",
+      "notional": 10874,
+      "limitPrice": 1.0874,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Broker Order Executed",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA"
+      },
+      "previousHash": "2353d6b12e5cd6a91a47e8476b78c9d28abbad194548fcc0210ab563b715e54d",
+      "hash": "bfa32602325bf13fa34bed34aea5413ae4f45b5a9309ded0f55c5eabbb618674",
+      "sequence": 418,
+      "serverTimestamp": "2026-09-23T04:48:49.935Z"
+    },
+    {
+      "id": "LOG-ORD-1790138930258-dub8m",
+      "timestamp": "2026-09-23T04:48:50.258Z",
+      "event": "ORDER_SUBMITTED",
+      "orderId": "ORD-001",
+      "symbol": "SPY",
+      "qty": 10,
+      "notional": 5800,
+      "limitPrice": null,
+      "user": "TRADER-01",
+      "guardrailsApproved": true,
+      "reason": "Institutional Execution",
+      "compliance": {
+        "rule17a5": true,
+        "brokerApproved": true,
+        "executionMode": "ALPACA_PAPER"
+      },
+      "previousHash": "bfa32602325bf13fa34bed34aea5413ae4f45b5a9309ded0f55c5eabbb618674",
+      "hash": "2f868c23bf08be57743eae698b75426a91baae7d73794b2831a66c389a5f1901",
+      "sequence": 419,
+      "serverTimestamp": "2026-09-23T04:48:50.292Z"
+    },
+    {
+      "id": "LOG-GRD-1790138930298-9703d",
+      "timestamp": "2026-09-23T04:48:50.298Z",
+      "event": "GUARDRAIL_TRIGGERED",
+      "guardrailType": "FLASH_CRASH_PROTECTION",
+      "rejectedOrder": {
+        "symbol": "SPY",
+        "notional": 100000
+      },
+      "reason": "Max notional breach",
+      "compliance": {
+        "rule17a5": true,
+        "action": "BLOCKED"
+      },
+      "previousHash": "2f868c23bf08be57743eae698b75426a91baae7d73794b2831a66c389a5f1901",
+      "hash": "338eb4da3f81e1ecf34e1644eda4e0dfe7eaa70674d694e313e252ffbe22bb0f",
+      "sequence": 420,
+      "serverTimestamp": "2026-09-23T04:48:50.300Z"
     }
   ]
 }
