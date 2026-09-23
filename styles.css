@@ -35,13 +35,13 @@ button { cursor: pointer; }
 
 .company-network-workspace { position: relative; display: flex; flex: 1; min-height: 0; height: 100%; flex-direction: column; overflow: hidden; background: #000; animation: workspace-in .16s ease-out; }
 @keyframes workspace-in { from { opacity: .72; } to { opacity: 1; } }
-.company-network-toolbar { position: relative; z-index: 4; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 42px; height: 42px; padding: 0 16px; border-bottom: 1px solid #202a29; background: #050808; flex-shrink: 0; }
-.company-search-block { position: relative; display: flex; align-items: center; gap: 8px; flex: 1; max-width: 680px; }
+.company-network-toolbar { position: relative; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 42px; height: 42px; padding: 0 16px; border-bottom: 1px solid #202a29; background: #050808; flex-shrink: 0; }
+.company-search-block { position: relative; z-index: 120; display: flex; align-items: center; gap: 8px; flex: 1; max-width: 680px; }
 .company-search-row { display: flex; width: 280px; flex-shrink: 0; }
 .company-search-row label { display: flex; flex: 1; align-items: center; gap: 6px; padding: 4px 8px; border: 1px solid #2a3d37; background: #090e0e; color: #64dcb1; height: 28px; }
 .company-search-row > button { width: 84px; border: 1px solid #35604f; border-left: 0; color: #78dfbb; background: #0b1915; font: 8.5px 'DM Mono'; letter-spacing: .06em; height: 28px; }
 .company-search-block input { width: 100%; border: 0; outline: 0; color: #edf5f2; background: transparent; font: 10px 'DM Mono'; }
-.company-search-results { position: absolute; z-index: 50; top: 34px; left: 0; width: min(540px, 95vw); border: 1px solid #28443b; background: #070d0d; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.92); border-radius: 4px; overflow: hidden; max-height: 420px; overflow-y: auto; }
+.company-search-results { position: absolute; z-index: 9999; top: 34px; left: 0; width: min(560px, 95vw); border: 1px solid #28443b; background: #070e0d; box-shadow: 0 20px 48px rgba(0, 0, 0, 0.98), 0 0 0 1px #28443b; border-radius: 4px; overflow: hidden; max-height: 420px; overflow-y: auto; opacity: 1; }
 .search-results-section-label { padding: 6px 12px; background: #0a1413; color: #628279; font: 700 8.5px 'DM Mono', monospace; letter-spacing: 0.08em; border-bottom: 1px solid #172723; text-transform: uppercase; }
 .search-recommendation-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 12px; border: 0; border-bottom: 1px solid #13221e; background: transparent; color: #d9e8e3; text-align: left; cursor: pointer; transition: all 0.12s ease; }
 .search-recommendation-item:hover, .search-recommendation-item.active { background: #0e201b; border-left: 2px solid #64dcb1; }

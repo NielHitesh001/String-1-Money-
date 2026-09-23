@@ -155,7 +155,8 @@ export default function CompanyNetworkPanel({ onAudit, onCompareWithEntity }) {
 
         if (appendBreadcrumb) {
           setBreadcrumbs((prev) => {
-            const existsIndex = prev.findIndex((b) => b.id === entityId);
+            const normEntityId = entityId.replace(/^wikidata_/, "");
+            const existsIndex = prev.findIndex((b) => b.id.replace(/^wikidata_/, "") === normEntityId);
             if (existsIndex >= 0) return prev.slice(0, existsIndex + 1);
             return [...prev, { id: entityId, name: payload.center?.name || entityId }].slice(-5);
           });
